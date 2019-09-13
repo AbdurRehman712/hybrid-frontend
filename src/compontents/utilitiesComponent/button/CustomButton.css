@@ -1,0 +1,14 @@
+.bgprimary{
+    background-color: #5b89e9 !important;
+    color: white !important;
+}
+
+.bgprimary-outline {
+    background: transparent !important;
+    border-color: #5b89e9 !important;
+    color:#5b89e9 !important;
+}
+
+.border90{
+    border-radius: 90px !important;
+}

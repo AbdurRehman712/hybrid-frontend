@@ -1,0 +1,38 @@
+header {
+    padding: 0px 50px;
+}
+
+header .navbar.navbar-expand-lg {
+    padding: 0;
+}
+
+header .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar-brand span {
+    font-size: 30px;
+    color: #505050 !important;
+    margin-left: 30px;
+}
+
+header .navbar-light .navbar-nav .nav-link.active{
+    color: #5b89e9 !important;
+}
+
+header .navbar-light .navbar-nav .nav-link{
+    color: #505050 !important;
+}
+
+.navbar-expand-lg .navbar-nav a {
+    margin: 20px 15px !important;
+}
+
+.navbar-expand-lg .navbar-nav .borderleft a {
+    padding: 8px 35px !important;
+}
+
+.borderleft{
+    border-left: 1px solid #f9f9f9;
+}

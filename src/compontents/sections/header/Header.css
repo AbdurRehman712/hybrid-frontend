@@ -1,9 +1,17 @@
 header {
-    padding: 0px 50px;
+    box-shadow: 0 2px 40px 0 rgba(56, 71, 96, 0.09);
+}
+
+header .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDIwIj4KICAgIDxnIGZpbGw9IiM1MDUwNTAiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjE3IiBoZWlnaHQ9IjMiIHJ4PSIxLjUiLz4KICAgICAgICA8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSIzIiB4PSIxOSIgcng9IjEuNSIvPgogICAgICAgIDxyZWN0IHdpZHRoPSIxNyIgaGVpZ2h0PSIzIiB4PSI3IiB5PSIxNyIgcng9IjEuNSIvPgogICAgICAgIDxyZWN0IHdpZHRoPSI1IiBoZWlnaHQ9IjMiIHk9IjE3IiByeD0iMS41Ii8+CiAgICAgICAgPHJlY3Qgd2lkdGg9IjE3IiBoZWlnaHQ9IjMiIHk9IjgiIHJ4PSIxLjUiLz4KICAgIDwvZz4KPC9zdmc+Cg==");
+}
+
+header .navbar-light .navbar-toggler{
+    border: 0 !important;
 }
 
 header .navbar.navbar-expand-lg {
-    padding: 0;
+    padding: 0px 50px;
 }
 
 header .navbar-brand {
@@ -25,14 +33,52 @@ header .navbar-light .navbar-nav .nav-link{
     color: #505050 !important;
 }
 
-.navbar-expand-lg .navbar-nav a {
-    margin: 20px 15px !important;
+header .navbar-expand-lg .navbar-nav a {
+    margin: 20px 15px;
+    font-family: 'Gilroy';
 }
 
-.navbar-expand-lg .navbar-nav .borderleft a {
+header .navbar-expand-lg .navbar-nav .borderleft a {
+    margin: 20px 0;
+}
+
+header .navbar-expand-lg .navbar-nav .borderleft a:first-child{
+    margin-right: 25px;
+}
+
+header .navbar-expand-lg .navbar-nav .borderleft a {
     padding: 8px 35px !important;
 }
 
-.borderleft{
+header .borderleft{
     border-left: 1px solid #f9f9f9;
+    padding-left: 35px;
+    margin-left: 10px;
+}
+
+
+@media (max-width:800px){
+    header {
+        padding: 0px 25px;
+    }
+    header .navbar-expand-lg .navbar-nav a{
+        margin: 0;
+    }
+    header .borderleft{
+        border-left: 0px solid #f9f9f9;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-left: 0;
+    }
+    header .navbar-toggler {
+        padding: 0;
+    }
+    header .navbar-brand span {
+        font-size: 25px;
+        margin-left: 25px;
+    }
+    header .navbar-expand-lg .navbar-nav .borderleft a:first-child {
+        margin-right: 5px;
+    }
 }

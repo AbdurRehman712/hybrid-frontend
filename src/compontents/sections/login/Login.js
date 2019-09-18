@@ -7,25 +7,41 @@ export class Login extends Component {
             <section className="login">
                 <Container>
                     <Row>
-                        <Col md={6}>
+                        <Col md={5}>
                             <h1>Innskráning</h1>
-                            <p>Ekki með aðgang? <a href="#">Smelltu hér</a></p>
-                            <Form>
-                                <Form.Group controlId="formBasicEmail" className="user-input-wrp">
-                                    <Form.Control type="email" className="inputText" />
-                                    <span class="floating-label">Notandanafn</span>
+                            <p className="mb-5">Ekki með aðgang? <a className="txt-blue" href="#">Smelltu hér</a></p>
+                            <Form className="mb-5">
+                                <Form.Group controlId="formBasicEmail">
+                                    <Form.Control type="email" />
+                                    <Form.Label>Notandanafn</Form.Label>
                                 </Form.Group>
-                                <Form.Group controlId="formBasicPassword" className="user-input-wrp">
-                                    <Form.Control type="password" className="inputText" />
-                                    <span class="floating-label">Lykilorð</span>
+                                <Form.Group controlId="formBasicPassword" className="mb-4">
+                                    <Form.Control type="password" />
+                                    <Form.Label>Lykilorð</Form.Label>
                                 </Form.Group>
-                                <Button variant="primary" type="submit">
+                                <Button variant="primary" type="submit" className="bg-blue" block>
                                     Innskrá
                                 </Button>
                             </Form>
+                            <div className="d-flex justify-content-between">
+                                <Form.Label className="custom-checkbox">
+                                    Muna eftir mér
+                                    <input className="remember" type="checkbox" id="remember" />
+                                    <span class="checkmark"></span>
+                                </Form.Label>
+                                <p className="forget"><a className="txt-blue" href="">Týnt lykilorð?</a></p>
+                            </div>
                         </Col>
-                        <Col md={6}>
-
+                        <Col md={1} className="login-with d-flex flex-column justify-content-center align-items-center">
+                            <div>
+                                <span className="line"></span>
+                                <span className="or">EDA</span>
+                                <span className="line"></span>
+                            </div>
+                        </Col>
+                        <Col md={4} className="social-login d-flex flex-column justify-content-center align-items-center">
+                            <Button variant="outline-light" block><span className="fb"><img src="/assets/images/fb-icon.png" /></span>Innskrá með Facebook</Button>
+                            <Button variant="outline-light" block><span className="gm"><img src="/assets/images/gmail-icon.png" /></span>Innskrá með Google</Button>
                         </Col>
                     </Row>
                 </Container>

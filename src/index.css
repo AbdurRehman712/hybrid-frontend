@@ -48,3 +48,12 @@ body {
 h1, h2, h3, h4, h5, h6, p, span{
   font-family: 'Gilroy';
 }
+
+.bg-blue{
+  background: #5b89e9 !important;
+  box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
+}
+
+.txt-blue{
+  color: #5b89e9 !important;
+}

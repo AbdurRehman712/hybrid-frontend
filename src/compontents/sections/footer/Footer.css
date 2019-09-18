@@ -93,4 +93,7 @@ footer .footer-bottom{
     .footer-details.row > div:last-child {
         text-align: right;
     }
+    .footer-details.row > div img {
+        width: 22px;
+    }
 }

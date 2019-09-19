@@ -7,7 +7,7 @@ export class Login extends Component {
             <section className="login">
                 <Container>
                     <Row>
-                        <Col md={5}>
+                        <Col md={6}>
                             <h1>Innskráning</h1>
                             <p className="mb-5">Ekki með aðgang? <a className="txt-blue" href="#">Smelltu hér</a></p>
                             <Form className="mb-5">
@@ -39,7 +39,7 @@ export class Login extends Component {
                                 <span className="line"></span>
                             </div>
                         </Col>
-                        <Col md={4} className="social-login d-flex flex-column justify-content-center align-items-center">
+                        <Col md={5} className="social-login d-flex flex-column justify-content-center align-items-center">
                             <Button variant="outline-light" block><span className="fb"><img src="/assets/images/fb-icon.png" /></span>Innskrá með Facebook</Button>
                             <Button variant="outline-light" block><span className="gm"><img src="/assets/images/gmail-icon.png" /></span>Innskrá með Google</Button>
                         </Col>

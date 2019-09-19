@@ -12,11 +12,11 @@ export class Login extends Component {
                             <p className="mb-5">Ekki með aðgang? <a className="txt-blue" href="#">Smelltu hér</a></p>
                             <Form className="mb-5">
                                 <Form.Group controlId="formBasicEmail">
-                                    <Form.Control type="email" />
+                                    <Form.Control type="email" required  />
                                     <Form.Label>Notandanafn</Form.Label>
                                 </Form.Group>
                                 <Form.Group controlId="formBasicPassword" className="mb-4">
-                                    <Form.Control type="password" />
+                                    <Form.Control type="password" required />
                                     <Form.Label>Lykilorð</Form.Label>
                                 </Form.Group>
                                 <Button variant="primary" type="submit" className="bg-blue" block>

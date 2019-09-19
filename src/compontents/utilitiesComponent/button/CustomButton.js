@@ -5,7 +5,7 @@ class CustomButton extends Component {
 
     render() {
         return (
-            <Button className={this.props.className} href={this.props.href}>
+            <Button className={this.props.className} as={this.props.as} to={this.props.to}>
                 {this.props.title}
             </Button>
         )

@@ -95,5 +95,14 @@ footer .footer-bottom{
     }
     .footer-details.row > div img {
         width: 22px;
+    }    
+    footer .footer-bottom .social {
+        align-items: flex-end !important;
+    }
+}
+
+@media (min-width:601px) and (max-width:799px){
+    .footer-details .text-right.email {
+        text-align: left !important;
     }
 }

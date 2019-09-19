@@ -12,10 +12,10 @@ class Footer extends Component {
                         </Col>
                         <Col>
                             <Row className="footer-details">
-                                <Col md={6}>
+                                <Col md={8} className="text-right email">
                                     <img src="/assets/images/email.png" alt="Hybrid Email" /> <span> <a href="mailto:info@hybrid.is"> info@hybrid.is </a> </span> 
                                 </Col>
-                                <Col md={6}>
+                                <Col md={4} className="text-right cell">
                                     <img src="/assets/images/contact.png" alt="Hybrid Contact" /> <span> <a href="5191919"> 519 1919 </a> </span> 
                                 </Col>
                             </Row>

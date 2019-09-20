@@ -9,6 +9,7 @@ header .navbar-light .navbar-toggler{
 }
 header .navbar.navbar-expand-lg {
     padding: 0px 50px;
+    z-index: 1;
 }
 header .navbar-brand {
     display: flex;

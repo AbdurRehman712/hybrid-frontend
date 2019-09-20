@@ -1,0 +1,92 @@
+.main {
+    position: relative;
+    background: #f9fbff;
+    padding: 110px 0;
+}
+.main .work{
+    margin-bottom: 80px;
+}
+.work h2.tite{
+    font-weight: 600;
+}
+.main::before{
+    content: "";
+    background-image: url('/assets/images/hybrid-home.png');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+}
+.main .steps {
+    padding: 0 35px 0 15px;
+}
+.main .step{
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
+    padding: 40px 40px;
+}
+.steps.step2 {
+    margin-bottom: 80px;
+}
+.steps.step2 .step {
+    position: absolute;
+    top: -85px;
+    z-index: 1;
+}
+.line1 {
+    position: absolute;
+    top: -210px;
+    left: -100px;
+    z-index: 0;
+}
+
+.line2 {
+    position: absolute;
+    left: -215px;
+    top: 35px;
+    z-index: 0;
+}
+
+.steps.step1.col-md-6 {
+    z-index: 1;
+}
+
+.work .steps.step2{
+    z-index: 1;
+}
+
+@media (max-width:600px){
+    .main{
+        padding: 60px 0;
+    }
+    .steps.step2 .step {
+        position: relative;
+        top: 0;
+        z-index: 1;
+        margin-top: 40px;
+    }
+    .steps.step2 {
+        margin-bottom: 40px;
+    }
+    .main .steps {
+        padding: 0 20px 0 20px;
+    }
+    .main::before{
+        height: 268px ;
+        position: absolute;
+        top: 0;
+        right: -100px;
+        z-index: 0;
+        top: -60px;
+    }
+}
+
+@media (min-height:601px)  and (max-width:799px){
+    .main::before{
+        height: 400px;
+    }
+}

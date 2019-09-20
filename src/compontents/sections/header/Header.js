@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import Button from '../../utilitiesComponent/button/CustomButton';
+import { Link } from 'react-router-dom';
+
 import './Header.css';
 
 class Header extends Component {
@@ -8,7 +10,7 @@ class Header extends Component {
         return (
             <header>
                 <Navbar bg="white" expand="lg">
-                    <Navbar.Brand href="#"><img src="/assets/images/hybrid-logo.png" alt="Hybrid Logo" /> <span> hybrid.is </span> </Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/"><img src="/assets/images/hybrid-logo.png" alt="Hybrid Logo" /> <span> hybrid.is </span> </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
@@ -19,8 +21,8 @@ class Header extends Component {
                         </Nav>
                         <Nav>
                             <div className="borderleft">
-                                <Button className="bgprimary border90" href="#" title="Nýskráning" />
-                                <Button className="bgprimary-outline border90" href="#" title="Innskráning" />
+                                <Button className="bgprimary border90" as={Link} to="/login" title="Nýskráning" />
+                                <Button className="bgprimary-outline border90" as={Link} to="/login" title="Innskráning" />
                             </div>
                         </Nav>
                     </Navbar.Collapse>

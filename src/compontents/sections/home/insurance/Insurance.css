@@ -22,18 +22,24 @@
 }
 
 @media (max-width:800px){
-    .insurance-logos .logo {
-        margin-bottom: 25px;
-    }
     .insurance-logos .logo .content h3 {
         font-size: 1rem;
     }
     .insurance-logos .logo .content p {
         font-size: 14px;
     }
+}
+
+@media (min-width:601px) and (max-width:800px){
+    .insurance-logos .logo {
+        margin-bottom: 25px;
+    }
     .insurance-logos .logo .content{
         padding: 30px 0 20px;
         min-height: 208px;
+    }
+    .insurance-logos.mb-5.row {
+        margin-bottom: 1rem !important;
     }
 }
 

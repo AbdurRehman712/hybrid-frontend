@@ -1,0 +1,91 @@
+.cost {
+    position: relative;
+    background: #f9fbff;
+    padding: 30px 0 150px;
+}
+.cost .content .item{
+    list-style-type: none;
+}
+.cost .content .item li::before{
+    content: "\2022";
+    color: #5b89e9 !important;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -0.8em;
+    margin-top: 4px;
+    position: absolute;
+}
+.cost .content .price, .cost .total .price{
+    list-style-type: none;
+    text-align: right;
+}
+.cost .content .price h4, .cost .total .price h4{
+    color: #5b89e9;
+    padding-right: 25px;
+}
+.cost .content .item h4 {
+    margin-left: 10px;
+}
+.cost .total .item h4{
+    padding-left: 25px;
+}
+.cost .table-responsive{
+    box-shadow: 0 0 20px 0
+rgba(91, 136, 233, 0.1);
+    background: white;
+    border-radius: 8px;
+}
+/* .cost table.table{
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.cost table.table th:first-child{
+    border-top-left-radius: 8px;
+}
+.cost table.table th:last-child{
+    border-top-right-radius: 8px;
+} */
+.cost table.table th{
+    border:0;
+    vertical-align: middle !important;
+}
+.cost table thead tr th {
+    padding: 20px 40px !important;
+}
+.cost table thead tr th:last-child {
+    text-align: right;
+}
+
+@media (max-width:800px){
+    .cost{
+        padding: 0px 0 20px;
+    }
+    .cost .table-responsive h3{
+        font-size: 1.2rem;
+    }
+    .cost .table-responsive h4{
+        font-size: 0.9rem;
+    }
+    .cost table thead tr th {
+        padding: 20px !important;
+    }
+    .cost ul.price {
+        padding: 0;
+    }
+    .other-content h3{
+        font-size: 1rem;
+    }
+    .cost .content .item li::before{
+        margin-top: -3px;
+    }
+    .cost .content .item {
+        padding-left: 18px;
+    }
+    .cost .content .price h4, .cost .total .price h4{
+        padding-right: 8px;
+    }
+    .cost .total .item h4{
+        padding-left: 8px;
+    }
+}

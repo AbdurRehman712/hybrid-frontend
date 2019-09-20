@@ -70,6 +70,8 @@
         top: 0;
         z-index: 1;
         margin-top: 40px;
+        width: 100%;
+        left: 0px;
     }
     .steps.step2 {
         margin-bottom: 40px;
@@ -78,7 +80,7 @@
         padding: 0 20px 0 20px;
     }
     .main::before{
-        height: 268px ;
+        height: 268px !important;
         position: absolute;
         top: 0;
         right: -100px;
@@ -87,6 +89,9 @@
     }
     .main .work {
         margin-bottom: 45px;
+    }
+    .line1, .line2{
+        display: none;
     }
 }
 

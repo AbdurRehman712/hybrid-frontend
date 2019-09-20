@@ -1,4 +1,4 @@
-body{
+html, body{
   overflow-x: hidden;
 }
 @font-face {
@@ -60,4 +60,8 @@ p, span{
 
 .txt-blue{
   color: #5b89e9 !important;
+}
+
+.txt-white{
+  color: white !important;
 }

@@ -1,0 +1,43 @@
+.contact {
+    position: relative;
+    background: #f9fbff;
+    padding: 110px 0;
+}
+.contact .formhead{
+    margin-bottom: 80px;
+}
+.formhead h2.tite{
+    font-weight: 600;
+}
+.contact::before{
+    content: "";
+    background-image: url('/assets/images/hybrid-home.png');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    top: 0;
+}
+
+@media (min-height:601px)  and (max-width:799px){
+    .contact::before{
+        height: 400px;
+    }
+}
+
+@media (max-width:600px){
+    .contact{
+        padding: 60px 0;
+    }
+    .contact::before{
+        height: 268px !important;
+        position: absolute;
+        top: 0;
+        right: -100px;
+        z-index: 0;
+        top: -60px;
+    }
+}

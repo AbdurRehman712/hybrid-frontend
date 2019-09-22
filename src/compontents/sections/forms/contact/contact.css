@@ -1,0 +1,57 @@
+.contact .form-group {
+	position: relative;
+	margin-bottom: 20px !important;
+}
+.contact .form-group input.form-control,.contact .form-group select.form-control{
+	height: 50px;
+	box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
+	background-color: #ffffff;
+	border: 0;
+}
+.contact .form-group textarea.form-control{
+	padding: .6rem .75rem;
+	border-radius: 9px;
+	box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1) !important;
+	border: 0;
+	box-shadow: none;
+}
+.contact .form-group > label {
+	position: absolute;
+	top: 12px;
+	bottom: 0;
+	left: 20px;
+	width: 100%;
+	transition: 0.2s;
+}
+.contact .form-group input:focus + label{
+  top: 100%;
+  margin-top: -50px;
+  font-size: 10px;
+}
+.contact .form-group textarea:focus + label{
+	top: 100%;
+	margin-top: -183px;
+	font-size: 10px;
+  }
+.contact .form-group input:not(:focus):valid + .form-label{
+	top: 100%;
+	margin-top: -50px;
+	font-size: 10px;
+}
+.contact .form-group textarea:not(:focus):valid + .form-label{
+	top: 100%;
+	margin-top: -183px;
+	font-size: 10px;
+}
+.contact .form-group input:focus,.contact  .form-group .form-control:focus,.contact  .form-group textarea.form-control:focus {
+	outline: 0;
+	border-bottom: 3px solid #5b89e9;
+	box-shadow: none !important;
+}
+
+
+@media (max-width:600px){
+	.info.form-row{
+		flex-direction: column;
+	}
+}

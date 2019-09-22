@@ -17,7 +17,7 @@ class Header extends Component {
                             <Nav.Link className="active" href="#home">Bílar á skrá</Nav.Link>
                             <Nav.Link href="#link">Bílaleit</Nav.Link>
                             <Nav.Link href="#link">Kaupferlið</Nav.Link>
-                            <Nav.Link href="#link">Hafa samband</Nav.Link>
+                            <Nav.Link as={Link} to="/contact">Hafa samband</Nav.Link>
                         </Nav>
                         <Nav>
                             <div className="borderleft">

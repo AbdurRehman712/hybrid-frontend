@@ -29,6 +29,7 @@
 }
 .faq .rc-collapse-header.title{
     position: relative;
+    height: 50px;
 }
 .faq .rc-collapse-header.title::before {
     content: "";

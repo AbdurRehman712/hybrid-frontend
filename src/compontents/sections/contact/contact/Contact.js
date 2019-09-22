@@ -16,7 +16,7 @@ class Contact extends Component {
                     </Row>
                     <Row>
                         <Col md={12} className="">
-                        <ContactForm />
+                            <ContactForm />
                         </Col>
                     </Row>
                 </Container>

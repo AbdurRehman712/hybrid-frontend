@@ -8,6 +8,45 @@
 	background-color: #ffffff;
 	border: 0;
 }
+.contact .form-group select.form-control option:hover,  .contact .form-group select.form-control option:focus,
+.contact .form-group select.form-control option:active{
+	background: #5b89e9 !important;
+	background-color: #5b89e9 !important;
+}
+.contact .form-group select.form-control{
+	background-image:
+		linear-gradient(45deg, transparent 50%, #5b89e9 50%),
+		linear-gradient(135deg, #5b89e9 50%, transparent 50%),
+		linear-gradient(to right, white, white);
+	background-position:
+		calc(100% - 20px) calc(1.3em + 2px),
+		calc(100% - 15px) calc(1.3em + 2px),
+		100% 0;
+	background-size:
+		5px 5px,
+		5px 5px,
+		2.5em 3.1em;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.contact .form-group select.form-control:focus{
+	background-image:
+		linear-gradient(45deg, #5b89e9 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, #5b89e9 50%),
+		linear-gradient(to right, #ffffff, #ffffff);
+  	background-position:
+		calc(100% - 15px) 1.4em,
+		calc(100% - 20px) 1.4em,
+		100% 0;
+	background-size:
+		5px 5px,
+		5px 5px,
+		2.5em 3.1em;
+		background-repeat: no-repeat;
+		outline: 0;
+  }
 .contact .form-group textarea.form-control{
 	padding: .6rem .75rem;
 	border-radius: 9px;

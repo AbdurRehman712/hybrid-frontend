@@ -1,7 +1,7 @@
 .contact {
     position: relative;
     background: #f9fbff;
-    padding: 110px 0;
+    padding: 110px 0 50px;
 }
 .contact .formhead{
     margin-bottom: 80px;
@@ -30,7 +30,7 @@
 
 @media (max-width:600px){
     .contact{
-        padding: 60px 0;
+        padding: 80px 0 0;
     }
     .contact::before{
         height: 268px !important;
@@ -39,5 +39,8 @@
         right: -100px;
         z-index: 0;
         top: -60px;
+    }
+    .contact .formhead {
+        margin-bottom: 40px;
     }
 }

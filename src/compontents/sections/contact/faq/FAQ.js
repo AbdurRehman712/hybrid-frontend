@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, Row, Col} from 'react-bootstrap';
 import Collapse from 'rc-collapse';
 import 'rc-collapse/assets/index.css';
-import Ripples from 'react-ripples';
 import './FAQ.css';
 
 var Panel = Collapse.Panel;

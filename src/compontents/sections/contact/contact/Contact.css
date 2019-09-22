@@ -11,7 +11,7 @@
 }
 .contact::before{
     content: "";
-    background-image: url('/assets/images/hybrid-home.png');
+    background-image: url('/assets/images/contact-map.png');
     background-position: top right;
     background-size: contain;
     background-repeat: no-repeat;

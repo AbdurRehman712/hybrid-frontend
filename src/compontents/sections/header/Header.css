@@ -32,9 +32,11 @@ header .navbar-expand-lg .navbar-nav a {
 }
 header .navbar-expand-lg .navbar-nav .borderleft a {
     margin: 20px 0;
+    font-size: 14px;
 }
 header .navbar-expand-lg .navbar-nav .borderleft a:first-child{
     margin-right: 25px;
+    border: 0;
 }
 header .navbar-expand-lg .navbar-nav .borderleft a {
     padding: 8px 35px !important;

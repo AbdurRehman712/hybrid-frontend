@@ -96,6 +96,58 @@
 	border-bottom: 3px solid #5b89e9;
 	box-shadow: none !important;
 }
+.findcar .custom-control-label{
+	padding: 6px 10px 6px 40px;
+	border-radius: 8px;
+	border: solid 0.5px #c9c9c9;
+	background-color: white;
+	font-size: 12px;
+	line-height: 24px;
+	color: #2b2b2b;
+	min-width: 130px;
+}
+.findcar .custom-control-input:checked + .custom-control-label{
+	padding: 6px 10px 6px 40px;
+	border-radius: 8px;
+	border: solid 0.5px #c9c9c9;
+	background-color: #5b89e9;
+	color: white;
+}
+.findcar .custom-control-label::before, .findcar .custom-control-label::after{
+	left: 0.9rem;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 2px;
+	border: solid 0.5px #c9c9c9;
+	background-color: #ffffff;
+	color: #2b2b2b;
+	box-shadow: none;
+}
+.findcar .custom-control-input:checked + .custom-control-label::after{
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCRcUJxBAh2d2AAAA4ElEQVQ4y2NgGDTAklOr0oGFBOU6u7X/a68xZmUmTvnnTf9dGBgYtP6oMJGgnIHhL8MWRpKUx11dxkiacgYGRtKU49WATTkeDdiV49SASzkDAxMDgzG/1nRjfhzK//yPRFbOwMBkzP9jJ2PGj726glhNj7+2GtVuph+rGcwZGBiM/22H2ILPdAYGBgZGTSOm3QxCDAwMDAxnmVx5fuByO5Kntc0YdjFA/HCS4QuDM9T0KHTHIIUSki0M+ExHClYULXiUI8UDXAte5ShA20z7nfZvrVCiFEOArrF2MAnKaQQA/oRvfz/2OlQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDktMjNUMjA6Mzk6MTYrMDA6MDDcRhglAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA5LTIzVDIwOjM5OjE2KzAwOjAwrRugmQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=") !important;
+	background-size: 85% !important;
+	background-position: center center !important;
+}
+.findcar .custom-control {
+	padding-left: 0;
+	margin-bottom: 1rem;
+}
+.findcar .radio-options .custom-control-label::after {
+	border-radius: 50%;
+	background-image:  none;
+}
+.findcar .radio-options .custom-control-input:checked + .custom-control-label::after {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEwMCIgd2lkdGg9IjEwMCI+DQogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQwIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9InRyYW5zcGFyZW50IiAvPg0KPC9zdmc+IA==") !important;
+    background-size: 85% !important;
+    background-position: center center !important;
+    background: radial-gradient(circle, black,white);
+    background-image: radial-gradient(circle at center center, black, white);
+	box-shadow: 0px 0px 0px 3px inset white;
+}
+.findcar .range-slider{
+	margin-bottom: 84px;
+}
 
 @media (max-width:600px){
 	.info.form-row{

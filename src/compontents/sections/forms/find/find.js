@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form, Button} from 'react-bootstrap';
-import './find.css'
+import { Container, Row, Col, Form} from 'react-bootstrap';
+import 'rc-slider/assets/index.css';
+import './Find.css'
+
+const Slider = require('rc-slider');
+const createSliderWithTooltip = Slider.createSliderWithTooltip;
+const Range = createSliderWithTooltip(Slider.Range);
 
 class Find extends Component {
     render() {
@@ -14,7 +19,7 @@ class Find extends Component {
                         </Col>
                         <Col md={12}>
                             <Form className="mb-5">
-                                <Form.Row className="info label">
+                                <Form.Row className="info label mb-3">
                                     <Form.Group as={Col} controlId="formGridMake">
                                         <Form.Label>My dream car is</Form.Label>
                                         <Form.Control as="select">
@@ -32,8 +37,8 @@ class Find extends Component {
                                 </Form.Row>
                                 <Form.Row className="info label">
                                     <Form.Group as={Col} controlId="formGridLeft">
-                                        <Form.Label>Fuel</Form.Label>
-                                            <Form.Row >
+                                        <Form.Label className="mb-3">Fuel</Form.Label>
+                                            <Form.Row className="m-0">
                                                 <Form.Check
                                                     custom
                                                     inline
@@ -59,7 +64,7 @@ class Find extends Component {
                                                     id="checkboxs3"
                                                 />
                                             </Form.Row>
-                                            <Form.Row >
+                                            <Form.Row className="m-0 mb-3">
                                                 <Form.Check
                                                     custom
                                                     inline
@@ -85,9 +90,112 @@ class Find extends Component {
                                                     id="checkboxs6"
                                                 />
                                             </Form.Row>
+                                            <Form.Label className="mb-3">Gearbox</Form.Label>
+                                            <Form.Row className="m-0 mb-3">
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="checkbox"
+                                                    label="Automatic"
+                                                    name="gearboxcheckboxs"
+                                                    id="checkbox7"
+                                                />
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="checkbox"
+                                                    label="Manual"
+                                                    name="gearboxcheckboxs"
+                                                    id="checkboxs8"
+                                                />
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="checkbox"
+                                                    label="Don’t care"
+                                                    name="gearboxcheckboxs"
+                                                    id="checkboxs9"
+                                                />
+                                            </Form.Row>
+                                            <Form.Label className="mb-3">Drive</Form.Label>
+                                            <Form.Row className="m-0 mb-5">
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="checkbox"
+                                                    label="4WD"
+                                                    name="drivecheckboxs"
+                                                    id="checkbox10"
+                                                />
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="checkbox"
+                                                    label="2WD"
+                                                    name="drivecheckboxs"
+                                                    id="checkboxs11"
+                                                />
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="checkbox"
+                                                    label="Don’t care"
+                                                    name="drivecheckboxs"
+                                                    id="checkboxs12"
+                                                />
+                                            </Form.Row>
+                                            <Form.Label className="mb-3">Does color matter?</Form.Label>
+                                            <Form.Row className="m-0 mb-3 radio-options">
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="radio"
+                                                    label="Yes"
+                                                    name="colorradio"
+                                                    id="radio1"
+                                                />
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="radio"
+                                                    label="No"
+                                                    name="colorradio"
+                                                    id="radio2"
+                                                />
+                                            </Form.Row>
                                     </Form.Group>
                                     <Form.Group as={Col} controlId="formGridRight">
-                                        
+                                    <Form.Label className="mb-3">Price range</Form.Label>
+                                        <div className="range-slider">
+                                            <Range />
+                                        </div>
+                                    <Form.Label className="mb-3">Milage in km</Form.Label>
+                                        <div className="range-slider">
+                                            <Range />
+                                        </div>
+                                    <Form.Label className="mb-3">Year</Form.Label>
+                                        <div className="range-slider">
+                                            <Range />
+                                        </div>
+                                    <Form.Label className="mb-3">What matters the most</Form.Label>
+                                        <Form.Row className="m-0 mb-3 radio-options">
+                                            <Form.Check
+                                                custom
+                                                inline
+                                                type="radio"
+                                                label="Lowest price"
+                                                name="matterradio"
+                                                id="radio3"
+                                            />
+                                            <Form.Check
+                                                custom
+                                                inline
+                                                type="radio"
+                                                label="Well equipped car"
+                                                name="matterradio"
+                                                id="radio4"
+                                            />
+                                        </Form.Row>
                                     </Form.Group>
                                 </Form.Row>
                             </Form>

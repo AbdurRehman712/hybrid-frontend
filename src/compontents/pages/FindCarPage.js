@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Find from '../sections/forms/find/Find';
+import Find from '../sections/forms/find/find';
 
 class FindCarPage extends Component {
     render() {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Col, Form, Button } from 'react-bootstrap';
-import './Contact.css'
+import './contact-form.css'
 
-class contact extends Component {
+class ContactForm extends Component {
     render() {
         return (
             <section className="form">
@@ -48,4 +48,4 @@ class contact extends Component {
     }
 }
 
-export default contact
+export default ContactForm

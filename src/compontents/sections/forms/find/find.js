@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Form, Button} from 'react-bootstrap';
-import './Find.css'
+import './find.css'
 
 class Find extends Component {
     render() {

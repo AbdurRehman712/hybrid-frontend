@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Find from '../sections/forms/find/Find';
+import FindForm from '../sections/forms/find/FindForm';
 
 class FindCarPage extends Component {
     render() {
         return (
             <div>
-                <Find />
+                <FindForm />
             </div>
         )
     }

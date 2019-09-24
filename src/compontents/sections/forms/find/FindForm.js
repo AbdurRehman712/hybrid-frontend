@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Form} from 'react-bootstrap';
 import 'rc-slider/assets/index.css';
-import './Find.css'
+import './find-form.css'
 
 const Slider = require('rc-slider');
 const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 
-class Find extends Component {
+class FindForm extends Component {
     render() {
         return (
             <section className="findcar">
@@ -207,4 +207,4 @@ class Find extends Component {
     }
 }
 
-export default Find
+export default FindForm

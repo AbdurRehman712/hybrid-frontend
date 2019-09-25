@@ -5,7 +5,7 @@ import Footer from './compontents/sections/footer/Footer';
 import ContactPage from './compontents/pages/ContactPage';
 import LoginPage from './compontents/pages/LoginPage';
 import FindCarPage from './compontents/pages/FindCarPage';
-import Home from './compontents/pages/Home';
+import BuyingProcess from './compontents/pages/BuyingProcess';
 class App extends Component {
   render() {
   return (
@@ -15,7 +15,7 @@ class App extends Component {
           <Route exact path='/' component={FindCarPage} />
           <Route exact path='/login' component={LoginPage} />
           <Route exact path='/contact' component={ContactPage} />
-          <Route exact path='/buying-process' component={Home} />
+          <Route exact path='/buying-process' component={BuyingProcess} />
         </Switch>
         <Footer />
     </div>

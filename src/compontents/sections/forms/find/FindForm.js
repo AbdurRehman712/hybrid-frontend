@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, Form} from 'react-bootstrap';
+import { Container, Row, Col, Form, InputGroup, Button} from 'react-bootstrap';
+import ColorPicker from 'react-circular-color';
 import 'rc-slider/assets/index.css';
 import './find-form.css'
 
@@ -8,6 +9,30 @@ const createSliderWithTooltip = Slider.createSliderWithTooltip;
 const Range = createSliderWithTooltip(Slider.Range);
 
 class FindForm extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            color: false
+        }
+    }
+    renderHandle = ({ onHandleDown, cx, cy, handleRadius }) => {
+        return(
+            <svg x={cx-10} y={cy-10} width={20} height={20} > 
+            <polygon points={'10,0 0,20 20,20'} fill="#fff" />
+            </svg>
+        );
+    }
+ 
+    renderRect = ({ color, x, y }) => {
+        return (
+            <circle
+                cx={x + 14}
+                cy={y + 14}
+                r="14"
+                fill={color}
+            />
+        );
+    }
     render() {
         return (
             <section className="findcar">
@@ -163,39 +188,127 @@ class FindForm extends Component {
                                                     id="radio2"
                                                 />
                                             </Form.Row>
+                                            <Form.Row className="ml-0 mr-0 color-picker">
+                                                <InputGroup className="mb-3">
+                                                    <Form.Control
+                                                    placeholder="First color *"
+                                                    aria-label="First color *"
+                                                    disabled
+                                                    />
+                                                    <InputGroup.Prepend>
+                                                        <InputGroup.Text>
+                                                        <ColorPicker
+                                                            className={this.state.color === true ? "active" : ""}
+                                                            renderRect={this.renderRect}
+                                                            centerRect={true}
+                                                            renderHandle={this.renderHandle}                
+                                                        />
+                                                            <img 
+                                                                src="/assets/images/color-wheel.png" 
+                                                                alt="Color Wheel"
+                                                            />
+                                                        </InputGroup.Text>
+                                                        <InputGroup.Text onClick={() => {this.setState({ color: !this.state.color });}} >Use color pallete</InputGroup.Text>
+                                                    </InputGroup.Prepend>
+                                                </InputGroup>
+                                                <Button className="color-more bg-transparent" block>
+                                                    Add a color…
+                                                </Button>
+                                            </Form.Row>
                                     </Form.Group>
-                                    <Form.Group as={Col} controlId="formGridRight">
-                                    <Form.Label className="mb-3">Price range</Form.Label>
-                                        <div className="range-slider">
-                                            <Range />
-                                        </div>
-                                    <Form.Label className="mb-3">Milage in km</Form.Label>
-                                        <div className="range-slider">
-                                            <Range />
-                                        </div>
-                                    <Form.Label className="mb-3">Year</Form.Label>
-                                        <div className="range-slider">
-                                            <Range />
-                                        </div>
-                                    <Form.Label className="mb-3">What matters the most</Form.Label>
-                                        <Form.Row className="m-0 mb-3 radio-options">
-                                            <Form.Check
-                                                custom
-                                                inline
-                                                type="radio"
-                                                label="Lowest price"
-                                                name="matterradio"
-                                                id="radio3"
-                                            />
-                                            <Form.Check
-                                                custom
-                                                inline
-                                                type="radio"
-                                                label="Well equipped car"
-                                                name="matterradio"
-                                                id="radio4"
-                                            />
-                                        </Form.Row>
+                                    <Form.Group as={Col} controlId="formGridRight" className="range-filter">
+                                        <Form.Label className="mb-3">Price range</Form.Label>
+                                            <div className="range-slider">
+                                                <Range tipFormatter={value => `${value} kr`} />
+                                            </div>
+                                        <Form.Label className="mb-3">Milage in km</Form.Label>
+                                            <div className="range-slider">
+                                                <Range tipFormatter={value => `${value} kr`} />
+                                            </div>
+                                        <Form.Label className="mb-3">Year</Form.Label>
+                                            <div className="range-slider">
+                                                <Range tipFormatter={value => `${value} kr`} />
+                                            </div>
+                                        <Form.Label className="mb-3">What matters the most</Form.Label>
+                                            <Form.Row className="m-0 mb-3 radio-options">
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="radio"
+                                                    label="Lowest price"
+                                                    name="matterradio"
+                                                    id="radio3"
+                                                />
+                                                <Form.Check
+                                                    custom
+                                                    inline
+                                                    type="radio"
+                                                    label="Well equipped car"
+                                                    name="matterradio"
+                                                    id="radio4"
+                                                />
+                                            </Form.Row>
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Row className="info label mt-5 mb-5">
+                                    <Form.Group as={Col} controlId="formGridMsg">
+                                        <Form.Label>Else about the car you’re looking after</Form.Label>
+                                        <Form.Control as="textarea" rows="6" />
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Row className="info label mb-5">
+                                    <Form.Group as={Col} controlId="formGritime">
+                                        <Form.Label>Timeframe and financing</Form.Label>
+                                        <Form.Control as="select">
+                                            <option>When do you want it?</option>
+                                            <option>...</option>
+                                        </Form.Control>
+                                    </Form.Group>
+                                    <Form.Group as={Col} controlId="formGridPay">
+                                        <Form.Label> <br  /> </Form.Label>
+                                        <Form.Control as="select">
+                                            <option>How will you pay for it?</option>
+                                            <option>...</option>
+                                        </Form.Control>
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Row className="info">
+                                    <Form.Label>Timeframe and financing</Form.Label>
+                                </Form.Row>
+                                <Form.Row className="info">
+                                    <Form.Group as={Col} controlId="formGridName">
+                                        <Form.Control type="text" required  />
+                                        <Form.Label>Full name</Form.Label>
+                                    </Form.Group>
+                                    <Form.Group as={Col} controlId="formGridSSC">
+                                        <Form.Control type="text" required  />
+                                        <Form.Label>Social security number</Form.Label>
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Row className="info mb-5">
+                                    <Form.Group as={Col} controlId="formGridEmail">
+                                        <Form.Control type="email" required  />
+                                        <Form.Label>Email</Form.Label>
+                                    </Form.Group>
+                                    <Form.Group as={Col} controlId="formGridCell">
+                                        <Form.Control type="text" required  />
+                                        <Form.Label>Phone number</Form.Label>
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Row className="mb-5">
+                                    <Form.Group as={Col} controlId="formGridAgree" className="text-right">
+                                        <Form.Label className="custom-checkbox agree text-right">
+                                            I aggree to Hybrids <a className="txt-blue" href="#a"> privacy terms</a>
+                                            <input className="remember" type="checkbox" id="remember" />
+                                            <span class="checkmark"></span>
+                                        </Form.Label>
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Row>
+                                    <Form.Group as={Col} controlId="formGridSend" className="text-right">
+                                        <Button variant="primary" type="submit" className="bg-blue">
+                                            Send
+                                        </Button>
                                     </Form.Group>
                                 </Form.Row>
                             </Form>

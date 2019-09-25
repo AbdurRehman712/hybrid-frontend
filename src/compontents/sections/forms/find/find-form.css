@@ -148,6 +148,153 @@
 .findcar .range-slider{
 	margin-bottom: 84px;
 }
+.range-filter .rc-slider-rail, .range-filter .rc-slider-step{
+	height: 8px;
+	color: #dcdcdc;
+}
+.range-filter .rc-slider-handle {
+    border: solid 0.6px #c9c9c9;
+	background-color: #ffffff;
+    width: 22px;
+    height: 22px;
+    margin-top: -7px;
+}
+.range-filter .rc-slider-track {
+    background-color: #5b89e9;
+    height: 8px;
+}
+.rc-slider-tooltip-inner{
+	background: white;
+	padding: 14px 14px 28px;
+	color: #2b2b2b;
+	border-radius: 5px;
+	box-shadow: 0 5px 10px 0
+rgba(0, 0, 0, 0.04);
+}
+.rc-slider-tooltip-placement-top .rc-slider-tooltip-arrow {
+    bottom: 0px;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px 8px 0;
+    border-top-color: white;
+}
+.color-picker{
+	margin-top: 80px;
+}
+.color-picker .input-group-text {
+    background:white !important;
+	border: 0 !important;
+	position: relative;
+}
+.color-picker .input-group-prepend .input-group-text:first-child {
+    border-left: 1px solid #f9fbff !important;
+}
+.color-picker .input-group-prepend .input-group-text:last-child {
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+	color: #5b89e9;
+	cursor: pointer;
+}
+.color-picker .input-group {
+    border-radius: 9px;
+    box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
+	background-color:#ffffff;
+}
+.input-group-text > svg {
+    display: none;
+    position: absolute;
+    left: -177%;
+}
+.input-group-text svg.active {
+	display: flex;
+}
+.findcar .color-picker input.form-control{
+	box-shadow: none;
+}
+.color-more.bg-transparent.btn.btn-primary {
+    border-radius: 9px;
+    border: solid 1px #979797;
+	color:black;
+	text-align: left;
+	padding-left: 40px;
+	position: relative !important;
+	height: 50px;
+}
+.color-more.bg-transparent::before {
+    content: url("data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCRkSFBBQvgnHAAABX0lEQVQ4y43Uy0pbYRQF4C9HMTNJjYVqECxGob6Clo7rJSniMwRKrZcOfIZWfQDT+gTSiZcMOuhTmOAopxzQkWhLO2pB7SCJITlRzxrtf+3L2nuz+VM6MaZo3rinuPBDxYEz9yDni7qPZgyBITM+qftstFd4QWTNQIwfsC6y2E2/d2LiPml5VSud1U9kPISMalslJ3qgelslMtIw96zG3CWlGLeh3FhkvceomzZjXFooF3hj379HG4K/vioGXjtOFA6H5gJ5tcQJp/L9Mn41n4NK+pr2K6Sa9rWyP+BKNpC6cyTBTb8rGT/Bbzt3jltsxcKzLgN104nrvxAGKgqJE4qOAweWpROFpy05Cpz57m2ihBXfnMOoSL7LOWUqxkSetR6Lqo+c9xM1851y1ZhKG5Nq3nWTCyIbPcZP+yDqrN7CiLLQlllZMOylbaHddu9iZ5FTsOB585sJVRw2NtPCfygbTYBCIyEKAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA5LTI1VDE4OjIwOjE2KzAwOjAwlC5zfQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOS0yNVQxODoyMDoxNiswMDowMOVzy8EAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC");
+    width: 21px;
+    height: 21px;
+    display: inline-flex;
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 0;
+	left: 10px;
+}
+.findcar .info.label .form-group > label, .custom-checkbox.agree.text-right.form-label  {
+    position: relative !important;
+    top: 0 !important;
+    bottom: 0 !important;
+	left: 0 !important;
+}
+
+.findcar .custom-checkbox {
+	display: block;
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 0px;
+	letter-spacing: 0.05px;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: black;
+}
+.findcar .custom-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.findcar .checkmark {
+	position: absolute;
+	top: 0;
+	right: 264px;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.25);
+}
+.findcar .custom-checkbox:hover input ~ .checkmark {
+	background-color: #fdfdfd;
+}
+.findcar .custom-checkbox input:checked ~ .checkmark {
+	background-color: #5b89e9;
+}
+.findcar .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.findcar .custom-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+.findcar .custom-checkbox .checkmark:after {
+	left: 8px;
+	top: 1px;
+	width: 9px;
+	height: 17px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
 
 @media (max-width:600px){
 	.info.form-row{

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col, Form, InputGroup, Button} from 'react-bootstrap';
-import ColorPicker from 'react-circular-color';
 import 'rc-slider/assets/index.css';
 import './find-form.css'
 
@@ -12,27 +11,17 @@ class FindForm extends Component {
     constructor(props){
         super(props);
         this.state = {
-            color: false
+            color: '#1569a8',
+            active: false
         }
     }
-    renderHandle = ({ onHandleDown, cx, cy, handleRadius }) => {
-        return(
-            <svg x={cx-10} y={cy-10} width={20} height={20} > 
-            <polygon points={'10,0 0,20 20,20'} fill="#fff" />
-            </svg>
-        );
-    }
- 
-    renderRect = ({ color, x, y }) => {
-        return (
-            <circle
-                cx={x + 14}
-                cy={y + 14}
-                r="14"
-                fill={color}
-            />
-        );
-    }
+    handleChange = (e) => {
+        this.setState({
+          oldColor: this.state.color,
+          color: e.target.value,
+          active: !this.state.active,
+        });
+    };
     render() {
         return (
             <section className="findcar">
@@ -88,8 +77,6 @@ class FindForm extends Component {
                                                     name="fuelcheckboxs"
                                                     id="checkboxs3"
                                                 />
-                                            </Form.Row>
-                                            <Form.Row className="m-0 mb-3">
                                                 <Form.Check
                                                     custom
                                                     inline
@@ -189,26 +176,25 @@ class FindForm extends Component {
                                                 />
                                             </Form.Row>
                                             <Form.Row className="ml-0 mr-0 color-picker">
-                                                <InputGroup className="mb-3">
+                                                <InputGroup className="mb-3 color-selector">
                                                     <Form.Control
                                                     placeholder="First color *"
                                                     aria-label="First color *"
                                                     disabled
                                                     />
                                                     <InputGroup.Prepend>
-                                                        <InputGroup.Text>
-                                                        <ColorPicker
-                                                            className={this.state.color === true ? "active" : ""}
-                                                            renderRect={this.renderRect}
-                                                            centerRect={true}
-                                                            renderHandle={this.renderHandle}                
-                                                        />
-                                                            <img 
-                                                                src="/assets/images/color-wheel.png" 
-                                                                alt="Color Wheel"
-                                                            />
+                                                        <InputGroup.Text className="color-selector">
+                                                            <span className="circle" style={{ background: this.state.color, backgroundImage: "url(/assets/images/color-wheel.png)" }} />
                                                         </InputGroup.Text>
-                                                        <InputGroup.Text onClick={() => {this.setState({ color: !this.state.color });}} >Use color pallete</InputGroup.Text>
+                                                        <InputGroup.Text className="color-selector">
+                                                            <input
+                                                                type="color"
+                                                                value={this.state.color}
+                                                                onChange={this.handleChange}
+                                                                className="hidden"
+                                                                />
+                                                                Use color pallete
+                                                            </InputGroup.Text>
                                                     </InputGroup.Prepend>
                                                 </InputGroup>
                                                 <Button className="color-more bg-transparent" block>
@@ -295,14 +281,12 @@ class FindForm extends Component {
                                         <Form.Label>Phone number</Form.Label>
                                     </Form.Group>
                                 </Form.Row>
-                                <Form.Row className="mb-5">
-                                    <Form.Group as={Col} controlId="formGridAgree" className="text-right">
-                                        <Form.Label className="custom-checkbox agree text-right">
+                                <Form.Row className="mb-5 justify-content-end mr-1">
+                                        <Form.Label className="custom-checkbox agree">
                                             I aggree to Hybrids <a className="txt-blue" href="#a"> privacy terms</a>
                                             <input className="remember" type="checkbox" id="remember" />
                                             <span class="checkmark"></span>
                                         </Form.Label>
-                                    </Form.Group>
                                 </Form.Row>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="formGridSend" className="text-right">

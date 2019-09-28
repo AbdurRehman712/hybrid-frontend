@@ -239,7 +239,7 @@ rgba(0, 0, 0, 0.04);
 	left: 0 !important;
 }
 
-.findcar .custom-checkbox {
+/* .findcar .custom-checkbox {
 	display: block;
 	position: relative;
 	padding-left: 40px;
@@ -252,7 +252,7 @@ rgba(0, 0, 0, 0.04);
 	-ms-user-select: none;
 	user-select: none;
 	color: black;
-}
+} */
 .findcar .custom-checkbox input {
 	position: absolute;
 	opacity: 0;
@@ -295,7 +295,34 @@ rgba(0, 0, 0, 0.04);
 	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-
+.color-selector {
+	display: inline-block;
+	margin: 0 auto;
+	border-radius: 3px;
+	position: relative;
+	font-family: verdana;
+	background: white;
+}
+.color-selector .circle {
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.color-selector .hidden {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+}
+.color-selector span {
+	display: inline-block;
+	vertical-align: middle;
+}
+.color-selector.input-group-text input {
+    width: 100%;
+	height: 100%;
+}
 @media (max-width:600px){
 	.info.form-row{
 		flex-direction: column;

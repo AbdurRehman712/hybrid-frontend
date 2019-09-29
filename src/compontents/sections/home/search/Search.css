@@ -1,7 +1,11 @@
+.search {
+    background: 
+    #f9fbff;
+    padding-top: 70px;
+}
 .search-header{
     padding-top: 70px;
     background: #ecf2fd;
-    margin-bottom: 70px;
 }
 .search .form-group {
 	position: relative;

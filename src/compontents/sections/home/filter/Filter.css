@@ -1,0 +1,65 @@
+.filter{
+    background: white;
+}
+
+.filter input.form-control,.filter select.form-control{
+	height: 40px;
+    border-radius: 8px;
+    border: solid 0.5px #c9c9c9 !important;
+    background-color: #ffffff;
+	border: 0;
+}
+.filter select.form-control option:hover,  .filter select.form-control option:focus,
+.filter select.form-control option:active{
+	background: #5b89e9 !important;
+	background-color: #5b89e9 !important;
+}
+.filter select.form-control{
+	background-image: url("data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0EGREF3g+JAAAAe0lEQVQ4y2NgGInghAxpqpkYN5xIIlp5EuMGhnOiJy+eyiRO+cmrZyQZGIjUAlfOQJQWFOWEtWAox68Fq3LcWnAqx64Fr3JMLQSVo2rBrpwRm5bfexhn/PvJWMzsYvKcCA0MDEfFWPcwMPx2sX7FQCw4wXeCj2jFwx8AADAOVHSEvGqzAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA5LTI5VDA0OjI1OjE3KzAwOjAwdOc4yAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOS0yOVQwNDoyNToxNyswMDowMAW6gHQAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC");
+    background-size: 15px;
+	background-position:
+		calc(100% - 20px) calc(0.6em + 2px),
+		calc(100% - 15px) calc(1em + 2px),
+		100% 0;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.filter select.form-control:focus{
+	background-image: url("data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0EGTBJtx/XAAAAfklEQVQ4y+3OMQ5AMBTG8a8OwEYkLsfkNDanMVg0eW3axeA2wiQ0LX1W8Y2vv39S4N8xk1EafklCRyrWSUgqmIHMkwH91onRlIzPyFzPqgUAqtUSTU7OSlweTXz+mIT5bXLPg8kz95I4dxIevyTaUsPhAECNtqCKywG81J/ZDmB/VKF8dkbGAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA5LTI5VDA0OjI1OjQ4KzAwOjAwyk9GRQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOS0yOVQwNDoyNTo0OCswMDowMLsS/vkAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC");
+    background-size: 15px;
+    background-position:
+        calc(100% - 20px) calc(0.6em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+		100% 0;
+	background-repeat: no-repeat;
+	outline: 0;
+}
+.filter input:focus,.filter  .form-control:focus,.filter  textarea.form-control:focus {
+	outline: 0;
+	border-bottom: 3px solid #5b89e9 !important;
+	box-shadow: none !important;
+}
+.filter-item{
+    padding: 18px;
+    border-left: 1px solid #f0f0f0;
+}
+.filter .form-control {
+    width: 220px !important;
+}
+.filter-item {
+    padding: 20px 0;
+    cursor: pointer;
+}
+.filter-item:not(.custom) {
+    flex: 1;
+    text-align: center;
+}
+.filter-item.custom {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.filter-item img {
+    margin-right: 10px;
+}

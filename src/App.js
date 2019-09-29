@@ -6,16 +6,19 @@ import ContactPage from './compontents/pages/ContactPage';
 import LoginPage from './compontents/pages/LoginPage';
 import FindCarPage from './compontents/pages/FindCarPage';
 import BuyingProcess from './compontents/pages/BuyingProcess';
+import HomePage from './compontents/pages/HomePage';
+
 class App extends Component {
   render() {
   return (
     <div className="App">
         <Header />
         <Switch>
-          <Route exact path='/' component={FindCarPage} />
+          <Route exact path='/' component={HomePage} />
           <Route exact path='/login' component={LoginPage} />
           <Route exact path='/contact' component={ContactPage} />
           <Route exact path='/buying-process' component={BuyingProcess} />
+          <Route exact path='/find-car' component={FindCarPage} />
         </Switch>
         <Footer />
     </div>

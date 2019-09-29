@@ -34,7 +34,7 @@ class FindForm extends Component {
                         <Col md={12}>
                             <Form className="mb-5">
                                 <Form.Row className="info label mb-3">
-                                    <Form.Group as={Col} controlId="formGridMake">
+                                    <Form.Group as={Col} controlId="formGridMake" className="p-0">
                                         <Form.Label>My dream car is</Form.Label>
                                         <Form.Control as="select">
                                             <option>Make</option>
@@ -183,10 +183,10 @@ class FindForm extends Component {
                                                     disabled
                                                     />
                                                     <InputGroup.Prepend>
-                                                        <InputGroup.Text className="color-selector">
+                                                        <InputGroup.Text className="color-selector d-flex">
                                                             <span className="circle" style={{ background: this.state.color, backgroundImage: "url(/assets/images/color-wheel.png)" }} />
                                                         </InputGroup.Text>
-                                                        <InputGroup.Text className="color-selector">
+                                                        <InputGroup.Text className="color-selector d-flex">
                                                             <input
                                                                 type="color"
                                                                 value={this.state.color}

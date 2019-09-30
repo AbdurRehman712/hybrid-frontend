@@ -63,3 +63,27 @@
 .filter-item img {
     margin-right: 10px;
 }
+.cal-div{
+    width: 160px;
+}
+.popover-body {
+    padding: 1rem 1.4rem !important;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.04);
+}
+.popover-body .rc-slider-track {
+    background: #5b89e9;
+}
+@media (min-width: 601px) and (max-width: 799px){
+    .filter .form-control {
+        width: 160px !important;
+    }
+}
+@media (max-width: 600px){
+    .filter .form-control {
+        width: 148px !important;
+    }
+    .filter-item.second-last.custom {
+        order: 2;
+    }
+}

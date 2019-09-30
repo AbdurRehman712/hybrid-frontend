@@ -1,0 +1,24 @@
+.product{
+    border-radius: 6px;
+    box-shadow: 0 0 20px 0 rgba(64, 55, 144, 0.1);
+    border: solid 0.5px #d5d5d5;
+    background-color: #ffffff;
+}
+.pro-details {
+    padding: 30px 50px;
+    display: block;
+    width: 100%;
+}
+.pro-details h2, .pro-details h3{
+    font-size: 20px;
+}
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.features-list > span > span {
+    margin-right: 10px;
+}
+.pro-price div > span {
+    font-size: 12px;
+}

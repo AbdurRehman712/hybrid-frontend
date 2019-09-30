@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Search from '../sections/home/search/Search';
 import Filter from '../sections/home/filter/Filter';
+import Layout from '../sections/home/layout/Layout';
 
 class HomePage extends Component {
     render() {
@@ -8,6 +9,7 @@ class HomePage extends Component {
             <div>
                 <Search />
                 <Filter />
+                <Layout />
             </div>
         )
     }

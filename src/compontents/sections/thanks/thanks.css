@@ -1,0 +1,16 @@
+.thanks{
+    background: #f9fbff;
+    padding: 100px 0 120px;
+}
+.thanks .bgprimary.border90.btn.btn-primary {
+    padding: 8px 60px !important;
+    margin-bottom: 15px;
+}
+.thanks .gohome {
+    font-size: 15px;
+    color: black;
+    display: flex;
+}
+.thanks .gohome img {
+    width: 50%;
+}

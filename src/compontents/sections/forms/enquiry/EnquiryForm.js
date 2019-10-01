@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Product from '../../product/Product';
-import { Container, Row, Col, Form, InputGroup, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Container, Row, Col, Form, Button} from 'react-bootstrap';
 import './enquiry-form.css'
 
 class EnquiryForm extends Component {
@@ -79,7 +80,7 @@ class EnquiryForm extends Component {
                                 </Form.Row>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="formGridSend" className="text-right">
-                                        <Button variant="primary" type="submit" className="bg-blue">
+                                        <Button as={Link} to="/thanks" variant="primary" type="submit" className="bg-blue">
                                             Senda inn beiðni
                                         </Button>
                                     </Form.Group>

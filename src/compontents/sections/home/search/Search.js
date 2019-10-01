@@ -110,7 +110,7 @@ class Search extends Component {
                                         </Form.Group>
                                     </Form.Row>
                                     <Form.Row>
-                                        <Form.Group as={Col} controlId="formGridNotification">
+                                        <Form.Group as={Col} className="notification-box" controlId="formGridNotification">
                                                 <Form.Check
                                                     custom
                                                     inline

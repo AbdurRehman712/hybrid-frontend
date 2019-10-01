@@ -58,7 +58,7 @@
     .layout{
         padding: 10px 0;
     }
-    .layout-btn-container{
-        display: none !important
+    .d-flex.mb-5.layout-btn-container {
+        display: none !important;
     }
 }

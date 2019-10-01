@@ -40,10 +40,10 @@ class Layout extends Component {
                             </Form>
                         </div>
                     </div>
-                    <section className="product-container">
-                        <Product listLayout={ this.state.listLayout } />
-                    </section>
                 </Container>
+                <section className="product-container">
+                    <Product listLayout={ this.state.listLayout } />
+                </section>
             </section>
         )
     }

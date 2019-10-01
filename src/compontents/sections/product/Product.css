@@ -57,10 +57,11 @@
 .pro-image-container{
     margin-bottom: -7px;
 }
-.layout.grid .product-container {
+.layout.grid .product-container .container{
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .layout.grid .product {
     display: block;
@@ -85,10 +86,109 @@
 .layout.grid .product .pro-price .flex-1 {
     margin-bottom: 15px;
 }
+.product-page .pro-details{
+    padding: 25px 50px 0 0;
+}
+.product-page .pro-details h2 {
+    font-size: 25px;
+    line-height: 28px;
+}
+.product-page .pro-details .pro-price-top > span {
+    font-size: 14px;
+    position: relative;
+    top: -5px;
+}
+.product-page .pro-details h3 {
+    margin-bottom: 15px;
+}
+.product-page  .car-info {
+    margin-bottom: 15px;
+}
+.product-page .car-info > span {
+    display: inline-flex;
+    align-items: center;
+}
+.product-page .pro-price {
+    display: none !important;
+}
+.product-page .features-list {
+    grid-template-columns: auto auto;
+    margin-bottom: 20px !important;
+}
+.product-page .features-list > span {
+    display: grid;
+    grid-template-columns: 40% auto;
+}
+.product-page .pro-content a {
+    font-size: 12px;
+    padding: 10px 25px;
+    margin-right: 15px;
+}
+.product-page .enquiry-with{
+    margin-right: 15px;
+}
+.product-page .enquiry-with .line {
+    width: 35px;
+    height: 2px;
+    background: #e3e3e5;
+    display: block;
+}
+.product-page .enquiry-with .or {
+    color: #cacaca;
+    font-size: 10px;
+    font-weight: 600;
+    margin: 15px;
+}
+.product-page .calculate{
+    display: inline-block;
+}
+.product-page  .calculate span {
+    font-size: 12px;
+    color: #5d5d5d;
+}
+.enquiry-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 
 @media (max-width: 800px){
     .pro-price .flex-1 {
         flex: 2;
+    }
+    .product-page .features-list span.icon > span {
+        display: none;
+    }
+    .product-page .features-list > span{
+        grid-template-columns: 15% auto;
+    }
+    .product-page .pro-details h3 {
+        margin-bottom: 5px;
+    }
+    .product-page .car-info {
+        font-size: 12px;
+    }
+    .product-page .enquiry-with .line {
+        width: 10px;
+    }
+    .product-page .pro-content a {
+        font-size: 11px;
+        padding: 5px 7px;
+        margin-right: 10px;
+    }
+    .product-page .car-info {
+        margin-bottom: 5px;
+    }
+    .pro-image-container a > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .product-page .features-list{
+        margin-bottom: 0;
     }
 }
 @media (min-width: 601px) and (max-width: 799px){
@@ -98,6 +198,12 @@
     .features-list {
         display: grid;
         grid-template-columns: auto auto auto;
+    }
+    .product-page .features-list{
+        grid-template-columns: 30% auto auto;
+    }
+    .product-page .pro-details{
+        padding: 15px 15px 0 0;
     }
 }
 @media (max-width: 600px){
@@ -115,4 +221,10 @@
     .pro-price .flex-1 {
         margin-bottom: 15px;
     }
+    .product-page .pro-details {
+        padding: 15px;
+    }
+    .enquiry-container{
+        flex-direction: column;
+    } 
 }

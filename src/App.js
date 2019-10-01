@@ -7,7 +7,7 @@ import LoginPage from './compontents/pages/LoginPage';
 import FindCarPage from './compontents/pages/FindCarPage';
 import BuyingProcess from './compontents/pages/BuyingProcess';
 import HomePage from './compontents/pages/HomePage';
-
+import ProductPage from './compontents/pages/ProductPage';
 class App extends Component {
   render() {
   return (
@@ -19,6 +19,7 @@ class App extends Component {
           <Route exact path='/contact' component={ContactPage} />
           <Route exact path='/buying-process' component={BuyingProcess} />
           <Route exact path='/find-car' component={FindCarPage} />
+          <Route exact path='/product-page' component={ProductPage} />
         </Switch>
         <Footer />
     </div>

@@ -1,0 +1,21 @@
+.topbar-product-page{
+    background: #f9fbff;
+    padding: 70px 0 20px;
+}
+
+.topbar-product-page a {
+    color: #2b2b2b;
+}
+.topbar-product-page a:hover{
+    text-decoration: none;
+}
+.topbar-product-page .goback, .topbar-product-page .print{
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+@media (max-width: 600px){
+    .topbar-product-page .row > div {
+        width: 50%;
+    }
+}

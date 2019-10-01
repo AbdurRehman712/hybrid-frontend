@@ -1,0 +1,147 @@
+.enquiry{
+    padding: 100px 0;
+    background: #f9fbff;
+}
+.enquiry h2{
+    font-weight: 600;
+}
+.enquiry .form-group {
+	position: relative;
+	margin-bottom: 20px !important;
+}
+.enquiry .form-row{
+	position: relative;
+}
+.enquiry .info.label .form-group > label {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.enquiry .form-group input.form-control,.enquiry .form-group select.form-control{
+	height: 50px;
+	box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
+	background-color: #ffffff;
+	border: 0;
+}
+.enquiry .form-group select.form-control option:hover,  .enquiry .form-group select.form-control option:focus,
+.enquiry .form-group select.form-control option:active{
+	background: #5b89e9 !important;
+	background-color: #5b89e9 !important;
+}
+.enquiry .form-group select.form-control{
+	background-image:
+		linear-gradient(45deg, transparent 50%, #5b89e9 50%),
+		linear-gradient(135deg, #5b89e9 50%, transparent 50%),
+		linear-gradient(to right, white, white);
+	background-position:
+		calc(100% - 20px) calc(1.3em + 2px),
+		calc(100% - 15px) calc(1.3em + 2px),
+		100% 0;
+	background-size:
+		5px 5px,
+		5px 5px,
+		2.5em 3.1em;
+	background-repeat: no-repeat;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.enquiry .form-group select.form-control:focus{
+	background-image:
+		linear-gradient(45deg, #5b89e9 50%, transparent 50%),
+		linear-gradient(135deg, transparent 50%, #5b89e9 50%),
+		linear-gradient(to right, #ffffff, #ffffff);
+  	background-position:
+		calc(100% - 15px) 1.4em,
+		calc(100% - 20px) 1.4em,
+		100% 0;
+	background-size:
+		5px 5px,
+		5px 5px,
+		2.5em 3.1em;
+		background-repeat: no-repeat;
+		outline: 0;
+}
+.enquiry .form-group textarea.form-control{
+	padding: .6rem .75rem;
+	border-radius: 9px;
+	box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1) !important;
+	border: 0;
+	box-shadow: none;
+}
+.enquiry .form-group > label {
+	position: absolute;
+	top: 12px;
+	bottom: 0;
+	left: 20px;
+	width: 100%;
+	transition: 0.2s;
+}
+.enquiry .form-group input.form-control:focus + label{
+  top: 0;
+  font-size: 10px;
+}
+.enquiry .form-group textarea:focus + label{
+	top: 0;
+	font-size: 10px;
+  }
+.enquiry .form-group input:not(:focus):valid + .form-label{
+	top: 0;
+	font-size: 10px;
+}
+.enquiry .form-group textarea:not(:focus):valid + .form-label{
+	top: 0;
+	font-size: 10px;
+}
+.enquiry .form-group input:focus,.enquiry  .form-group .form-control:focus,.enquiry  .form-group textarea.form-control:focus {
+	outline: 0;
+	border-bottom: 3px solid #5b89e9;
+	box-shadow: none !important;
+}
+
+.enquiry .custom-checkbox input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+.enquiry .checkmark {
+	position: absolute;
+	top: 0;
+	right: 300px;
+	height: 25px;
+	width: 25px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.25);
+}
+.enquiry .custom-checkbox:hover input ~ .checkmark {
+	background-color: #fdfdfd;
+}
+.enquiry .custom-checkbox input:checked ~ .checkmark {
+	background-color: #5b89e9;
+}
+.enquiry .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+.enquiry .custom-checkbox input:checked ~ .checkmark:after {
+	display: block;
+}
+.enquiry .custom-checkbox .checkmark:after {
+	left: 8px;
+	top: 1px;
+	width: 9px;
+	height: 17px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.enquiry .bg-blue.btn.btn-primary {
+    padding: 10px 30px;
+    border-radius: 9px;
+}

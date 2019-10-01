@@ -8,6 +8,7 @@ import FindCarPage from './compontents/pages/FindCarPage';
 import BuyingProcess from './compontents/pages/BuyingProcess';
 import HomePage from './compontents/pages/HomePage';
 import ProductPage from './compontents/pages/ProductPage';
+import EnquiryPage from './compontents/pages/EnquiryPage';
 class App extends Component {
   render() {
   return (
@@ -20,6 +21,7 @@ class App extends Component {
           <Route exact path='/buying-process' component={BuyingProcess} />
           <Route exact path='/find-car' component={FindCarPage} />
           <Route exact path='/product-page' component={ProductPage} />
+          <Route exact path='/enquiry-form' component={EnquiryPage} />
         </Switch>
         <Footer />
     </div>

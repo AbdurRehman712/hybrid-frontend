@@ -201,13 +201,19 @@ rgba(0, 0, 0, 0.04);
     top: -1px;
 }
 
-@media (max-width:600px){
-    .info.label.mb-5.car-type.form-row > div{
-        margin-bottom: 15px !important;
-    }
-    .search .fuel-type.form-row .custom-control .custom-control-label {
-        min-width: 144px;
-    }
+@media (max-width: 800px){
+	.info.label.car-type {
+		margin-bottom: 0px !important;
+	}
+	.type.form-row {
+		margin-bottom: 0px !important;
+	}
+	.fuel-type.form-row {
+		margin-bottom: 0px !important;
+	}
+	.search .range-slider:not(:last-child) {
+		margin-bottom: 30px;
+	}
 }
 
 @media (min-width:601px) and (max-width:799px){
@@ -227,5 +233,14 @@ rgba(0, 0, 0, 0.04);
     .search .type.form-row .custom-control-label {
         min-width: 136px !important;
         margin-right: 15px;
+	}
+}
+
+@media (max-width:600px){
+    .info.label.mb-5.car-type.form-row > div{
+        margin-bottom: 15px !important;
+    }
+    .search .fuel-type.form-row .custom-control .custom-control-label {
+        min-width: 144px;
     }
 }

@@ -18,7 +18,7 @@ class Search extends Component {
                     <Container>
                         <Row>
                             <Col md={12}>
-                                <Form className="mb-5">
+                                <Form className="mb-lg-5">
                                     <Form.Row className="info label">   
                                         <Form.Group as={Col} controlId="formGridLeft" className="P-0">
                                             <Form.Row className="info label mb-5 car-type">

@@ -19,6 +19,18 @@
     justify-content: center;
     align-items: center;
 }
+.btn-layout span.active{
+    background: #5b89e9 !important;
+}
+.btn-layout span.active:first-child img{
+    filter: invert(0) !important;
+}
+.btn-layout span.active:last-child img{
+    filter: invert(100%) !important;
+}
+.btn-layout span:first-child img{
+    filter: invert(100%);
+}
 .search-box{
     width: 70%;
     margin: auto;
@@ -40,4 +52,13 @@
 }
 .search-box form input {
     padding-left: 40px;
+}
+
+@media (max-width: 800px){
+    .layout{
+        padding: 10px 0;
+    }
+    .layout-btn-container{
+        display: none !important
+    }
 }

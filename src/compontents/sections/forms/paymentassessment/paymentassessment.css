@@ -1,0 +1,26 @@
+.assessment{
+    background: #f9fbff;
+    padding: 100px 0 180px;
+}
+.assessment .btn.btn-outline-light {
+    color: #000;
+    border-radius: 9px;
+    box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
+    background-color: #ffffff;
+    padding-left: 100px;
+    position: relative;
+    height: 40px;
+}
+.car-assessment-icon {
+    background: #26589b;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 62px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+.car-assessment-icon img{
+    width: 22px;
+}

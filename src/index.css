@@ -69,3 +69,11 @@ p, span{
   background: 
   #f9fbff;
 }
+
+button:focus {
+  outline: none;
+}
+
+body .btn-primary.focus,body .btn-primary:focus{
+  box-shadow: none !important;
+}

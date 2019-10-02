@@ -51,7 +51,7 @@ class Filter extends Component {
                                 Year
                             </div>
                             <div className="filter-item second-last custom">
-                                <img alt="setting" src="data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0SLATSmfYWAAAB4UlEQVQ4y43TTUvUURQG8N80g9Z3CGRANyHVQsTURVhfQVv0gkQvi8psJwlpvmRQKvSChFCgIAZBtc+knSNBCzfZUJiQkC6CLJyBYW6bvzP/UZGexYV7znPOczj3uexGgzVB8E3t7uSBPQqu+qVDh6QL9sE5D9SBBc/AK29BvSc6d9JvC1ZsGpIRXAY9goyHtiwr6o3TLwm6VRtVMKtNIhq3zYy8ASldinGVWUsRqXrXqCmQ9NnzcrBFwa0YKSktLRmL3JF3PN5nwp9oY9UGbQiCDQORYsqW8UrhRS8j+rycIc2aDcubj0pmfNym1hrwRnAaDMppLLVplHcXnBS8N66er354rdcBJG0YrlC+Z0MSCTdMyVolOFtKpwXNFQUtgnTpdkaotEYgWu/OaAxrlky4KIGkdSMV2fvWo5Fumpa1QoNJi4JToF9eU4neJK8PtAneGXNkO5UxC6rMyRvRqtWIvDlVkRcylYMNKjgUlfRbFwQ/9UX0lJzROL3OpkcV1qhRU2GNPjnHytfHVh20N1LR+cUk2z9uwWFXJFz3O2bvhDaz/uqXck2tD/E+PYo+KZiwKOgGXYKMUTnLinp2Snd64QSYMw2mzIGjnjpvH4zLatcua8x/od6qIPhefqYy/gEZrpbzLj+sTwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wOS0yOVQxODo0NDowNCswMDowMIln2zsAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDktMjlUMTg6NDQ6MDQrMDA6MDD4OmOHAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==" />
+                                <img alt="setting" src="assets/images/setting-icon.png" />
                                 More
                             </div>
                             <OverlayTrigger
@@ -90,7 +90,7 @@ class Filter extends Component {
                                     }
                                     >
                                     <div className="filter-item custom last bg-blue txt-white">
-                                        <img alt="calculate" src="data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0SJir0oBNTAAABIklEQVQ4y72UvUpDQRCFv4liLGy8aKHGIiByC8Ei2AUR0tgKFhZRsFAhIOhbiJVPIIIIYuMTWAg2WhlIKQQkaKWtP7kyFtl7GXFjso2z1QznzJwzu6zoOw/8jgh49dRn0IanjNa05q03cgSGIeikbgQRmGKpN2Ew7c4EMWNaIpG6mTqfIniWJ0OgQplxZtkm0X35dPAhdhhwiBtOne+s24Ieh22pTTvItNyzG7YlUu1/bynyql0E9eGj4Jv+t7ekRd0D0Dnd6mW6E4+U9IATzqgaAXmuGHbJhRwagnzpJpdcUxHjST4od5sAMUXuWMUQNMc6eZfU5dZ6KHDOGivEHS+Zw9HsjPyc8MKytECrTBtJCUddJMkbLQdp9rXW/kNCv5lvH+Fb5M8+kX0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDktMjlUMTg6Mzg6NDIrMDA6MDBd+hX2AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA5LTI5VDE4OjM4OjQyKzAwOjAwLKetSgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=" />
+                                        <img alt="calculate" src="assets/images/calculator-white.png" />
                                         Calculate loan
                                     </div>
                             </OverlayTrigger>

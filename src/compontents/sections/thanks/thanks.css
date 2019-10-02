@@ -2,9 +2,18 @@
     background: #f9fbff;
     padding: 100px 0 120px;
 }
+.thanks h1 {
+    font-weight: 600;
+    font-size: 45px;
+}
+.thanks p {
+    font-size: 20px;
+    letter-spacing: 0.04px;
+}
 .thanks .bgprimary.border90.btn.btn-primary {
-    padding: 8px 60px !important;
+    padding: 10px 90px !important;
     margin-bottom: 15px;
+    font-size: 18px;
 }
 .thanks .gohome {
     font-size: 15px;

@@ -9,10 +9,10 @@ class Thanks extends Component {
             <section className="thanks">
                 <Container>
                     <Row className="justify-content-center flex-column align-items-center">
-                        <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
+                        <Col md={7} className="d-flex flex-column justify-content-center align-items-center">
                             <img className="mb-4" src="assets/images/thanks-tick.png" alt="thanks" />
                             <h1 className="mb-4 text-center">Thanks for submitting!</h1>
-                            <p className="mb-5 text-center">Við munum fara í málið eins og skot. Þú getur fylgst með málinu hér inn á síðunni, þú munt einnig fá tilkynningu í tölvupósti</p>
+                            <p className="thanks-txt mb-5 text-center">Við munum fara í málið eins og skot. Þú getur fylgst með málinu hér inn á síðunni, þú munt einnig fá tilkynningu í tölvupósti</p>
                         </Col>
                         <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
                             <p>Málsnr. <br /> #01923</p>

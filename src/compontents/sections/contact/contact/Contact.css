@@ -9,6 +9,13 @@
 .formhead h2.tite{
     font-weight: 600;
 }
+.contact .title.mb-3 {
+    font-weight: 600;
+    font-size: 45px;
+}
+.contact p {
+    font-size: 20px;
+}
 .contact::before{
     content: "";
     background-image: url('/assets/images/contact-map.png');

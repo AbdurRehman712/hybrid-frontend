@@ -6,7 +6,13 @@
 .faq .react-ripples {
     width: 100%;
 }
-
+.faq .title.mb-3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+.faq p {
+    font-size: 20px;
+}
 .faq .rc-collapse {
     width: 100%;
     background: transparent;
@@ -30,6 +36,8 @@
 .faq .rc-collapse-header.title{
     position: relative;
     height: 50px;
+    font-size: 18px;
+    letter-spacing: 0.04px;
 }
 .faq .rc-collapse-header.title::before {
     content: "";

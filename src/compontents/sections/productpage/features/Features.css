@@ -12,6 +12,7 @@
 .features-container h2{
     color: #2b2b2b;
     font-size: 18px;
+    font-weight: 600;
 }
 .features-list-items{
     list-style: none !important;
@@ -27,4 +28,6 @@
 .features-list-items li{
     font-size: 13px;
     color:#2b2b2b;
+    font-weight: 500;
+    margin-bottom: 6px;
 }

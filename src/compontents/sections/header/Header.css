@@ -55,12 +55,22 @@ header .borderleft{
     header .navbar-expand-lg .navbar-nav a{
         margin: 0;
     }
-    header .borderleft{
+    /* header .borderleft{
         border-left: 0px solid #f9f9f9;
         display: flex;
         justify-content: space-between;
         padding: 0;
         margin-left: 0;
+    } */
+    header .borderleft {
+        border-left: 0px solid 
+        #f9f9f9;
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: flex-start;
     }
     header .navbar-toggler {
         padding: 0;
@@ -71,5 +81,46 @@ header .borderleft{
     }
     header .navbar-expand-lg .navbar-nav .borderleft a:first-child {
         margin-right: 5px;
+    }
+    #root header .borderleft a.btn-primary {
+        background: transparent !important;
+        color: #5a88e8 !important;
+        border: 0 !important;
+        padding: 10px 0 10px 20px !important;
+        margin: 0px !important;
+        position: relative;
+    }
+    header .navbar-expand-lg .navbar-nav .borderleft a::before {
+        background-image: url('/assets/images/login-icon.png') !important;
+        background-size: contain;
+        width: 12px;
+        height: 12px;
+        display: block;
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+    header .navbar-expand-lg .navbar-nav .borderleft a:first-child::before {
+        background-image: url('/assets/images/login-icon.png') !important;
+    }
+    header .navbar-expand-lg .navbar-nav .borderleft a:last-child::before {
+        background-image: url('/assets/images/signup-icon.png') !important;
+    }
+}
+
+@media (min-width:800px){
+    header .navbar-light .navbar-nav .nav-link.active{
+        position: relative;
+    }
+    header .navbar-light .navbar-nav .nav-link.active::before {
+        content: "";
+        border-bottom: 2px solid #5b89e9;
+        position: absolute;
+        width: 110%;
+        bottom: -20px;
+        left: -6px;
     }
 }

@@ -1,0 +1,90 @@
+.requests{
+    background: #f9fbff;
+    padding: 100px 0 120px;
+}
+.requests h1{
+    font-weight: 600;
+}
+.requests p{
+    font-size: 20px;
+}
+.requests .nav-tabs {
+    border-bottom: 3px solid 
+    #d6d6d6;
+}
+.requests .nav.nav-tabs {
+    font-size: 18px;
+    font-weight: 500;
+}
+.requests .nav-tabs .nav-link{
+    color: black;
+    padding: 10px 30px;
+}
+.requests .nav-tabs .nav-item.show .nav-link, .requests .nav-tabs .nav-link.active{
+    color: #5b89e9;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #5b89e9;
+    margin-bottom: -3px;
+}
+.requests .tab-content {
+    padding: 40px 0;
+}
+.requests table { 
+    border-collapse:separate; 
+    border-spacing:0 20px; 
+} 
+.requests table thead th{
+    color: #767676;
+    font-size: 14px;
+    font-weight: normal;
+    border: none;
+    letter-spacing: 0.01px;
+    text-transform: uppercase;
+}
+.requests .table td, .requests .table th{
+    border-top: none;
+}
+.requests table tbody td{
+    font-size: 20px;
+    padding: 0 0.75rem;
+    vertical-align: middle;
+}
+.requests .stutus-dot{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+.requests .stutus-dot.green{
+    background: #76cc66;
+}
+.requests .stutus-dot.red{
+    background: #cc6666;
+}
+.requests .color-info .stutus-dot{
+    margin-right: 5px;
+}
+.color-info {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.requests table tbody tr.item{
+    border-radius: 15px;
+    box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
+    background-color: #ffffff;
+}
+
+
+@media (max-width:600px){
+    .color-info {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+    .requests .tab-content {
+        padding: 20px 0;
+    }
+}

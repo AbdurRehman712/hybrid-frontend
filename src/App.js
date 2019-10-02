@@ -11,6 +11,7 @@ import ProductPage from './compontents/pages/ProductPage';
 import EnquiryPage from './compontents/pages/EnquiryPage';
 import ThanksPage from './compontents/pages/ThanksPage';
 import PaymentAssessment from './compontents/pages/PaymentAssessmentPage';
+import RequestsPage from './compontents/pages/RequestsPage';
 class App extends Component {
   render() {
   return (
@@ -26,6 +27,7 @@ class App extends Component {
           <Route exact path='/enquiry-form' component={EnquiryPage} />
           <Route exact path='/thanks' component={ThanksPage} />
           <Route exact path='/payment-assessment' component={PaymentAssessment} />
+          <Route exact path='/requests' component={RequestsPage} />
         </Switch>
         <Footer />
     </div>

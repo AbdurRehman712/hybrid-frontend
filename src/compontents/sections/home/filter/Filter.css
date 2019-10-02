@@ -7,7 +7,8 @@
     border-radius: 8px;
     border: solid 0.5px #c9c9c9 !important;
     background-color: #ffffff;
-	border: 0;
+    border: 0;
+    font-size: 12px;
 }
 .filter select.form-control option:hover,  .filter select.form-control option:focus,
 .filter select.form-control option:active{
@@ -73,6 +74,27 @@
 }
 .popover-body .rc-slider-track {
     background: #5b89e9;
+}
+.filter-item.custom.last.bg-blue.txt-white {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.cal-div span{
+   color: #2b2b2b;
+   font-size: 12px !important;
+}
+.cal-div span:first-child {
+    font-weight: bold;
+}
+.cal-div .rc-slider-handle {
+    border: solid 0.6px #c9c9c9 !important;
+    background-color:#ffffff;
+}
+.filter-item {
+    font-size: 12px;
+    font-weight: 600;
 }
 @media (max-width: 800px) {
     .filter{

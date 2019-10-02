@@ -24,6 +24,7 @@
     border: solid 0.5px #c9c9c9 !important;
     background-color: #ffffff;
 	border: 0;
+	font-size: 12px;
 }
 .search .form-group select.form-control option:hover,  .search .form-group select.form-control option:focus,
 .search .form-group select.form-control option:active{
@@ -147,7 +148,7 @@
 	box-shadow: 0px 0px 0px 3px inset white;
 }
 .search .range-slider:not(:last-child){
-	margin-bottom: 84px;
+	margin-bottom: 76px;
 }
 .range-filter .rc-slider-rail, .range-filter .rc-slider-step{
 	height: 8px;
@@ -183,7 +184,9 @@ rgba(0, 0, 0, 0.04);
     font-size: 22px;
 }
 .btn-result.bg-blue.btn.btn-primary {
-    position: relative;
+	position: relative;
+	font-weight: bold;
+	font-size: 12px;
 }
 .btn-result{
     border-radius: 19px !important;
@@ -200,7 +203,10 @@ rgba(0, 0, 0, 0.04);
     left: -2px;
     top: -1px;
 }
-
+.form-label {
+    font-weight: 600;
+    font-size: 14px;
+}
 @media (max-width: 800px){
 	.info.label.car-type {
 		margin-bottom: 0px !important;

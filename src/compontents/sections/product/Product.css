@@ -12,6 +12,7 @@
 }
 .pro-details h2, .pro-details h3{
     font-size: 20px;
+    font-weight: bold;
 }
 .pro-details h3{
     margin: 0;
@@ -21,7 +22,7 @@
     grid-template-columns: 20% 22% auto;
 }
 .features-list span .title {
-    font-size: 14px;
+    font-size: 12px;
     color: #2b2b2b;
     margin-right: 10px;
     font-weight: 600;

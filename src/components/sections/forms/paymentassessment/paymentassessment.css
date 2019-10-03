@@ -2,6 +2,14 @@
     background: #f9fbff;
     padding: 100px 0 180px;
 }
+.assessment h1.title {
+    font-size: 45px;
+    font-weight: 600;
+}
+.assessment span {
+    font-size: 18px;
+    font-weight: normal;
+}
 .assessment .btn.btn-outline-light {
     color: #000;
     border-radius: 9px;

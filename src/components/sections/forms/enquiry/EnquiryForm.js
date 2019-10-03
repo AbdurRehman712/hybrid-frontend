@@ -48,8 +48,8 @@ class EnquiryForm extends Component {
                                         </Form.Control>
                                     </Form.Group>
                                 </Form.Row>
-                                <Form.Row className="info">
-                                    <Form.Label>Timeframe and financing</Form.Label>
+                                <Form.Row className="info cust">
+                                    <Form.Label>Enough about the car, tell us something about you?</Form.Label>
                                 </Form.Row>
                                 <Form.Row className="info">
                                     <Form.Group as={Col} controlId="formGridName">

@@ -1,55 +1,67 @@
-.funding {
+.insurance {
     position: relative;
     background: #f9fbff;
     padding: 30px 0 40px;
 }
-.fundings-logos .logo {
+.insurance h2.title {
+    font-weight: 600;
+    font-size: 30px !important;
+}
+.insurance-logos .logo {
     margin-bottom: 30px;
 }
-.fundings-logos .logo .content{
+.insurance-logos .logo .content{
     border-radius: 8px;
     box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
     padding: 50px 0 20px;
     min-height: 250px;
 }
-.fundings-logos .logo .content img{
+.insurance h2.title + p {
+    font-size: 15px;
+    font-weight: 300;
+}
+.insurance-logos .logo .content img{
     margin-bottom: 20px;
 }
-.fundings-logos .logo .content p{
+
+.insurance-logos .logo .content p{
     color: #5b89e9;
 }
 
 @media (max-width:800px){
-    .fundings-logos .logo .content h3 {
+    .insurance-logos .logo .content h3 {
         font-size: 1rem;
     }
-    .fundings-logos .logo .content p {
+    .insurance-logos .logo .content p {
         font-size: 14px;
     }
 }
 
 @media (min-width:601px) and (max-width:800px){
-    .fundings-logos .logo {
+    .insurance-logos .logo {
         margin-bottom: 25px;
     }
-    .fundings-logos .logo .content{
+    .insurance-logos .logo .content{
         padding: 30px 0 20px;
         min-height: 208px;
+    }
+    .insurance-logos.mb-5.row {
+        margin-bottom: 1rem !important;
     }
 }
 
 @media (max-width:600px){
-    .fundings-logos .logo {
+    .insurance-logos .logo {
         width: 50%;
         margin-bottom: 10px;
     }
-    .fundings-logos .logo:nth-child(2n+1) {
+    .insurance-logos .logo:nth-child(2n+1) {
         padding-right: 5px; 
     }
-    .fundings-logos .logo:nth-child(2n+2) {
+    .insurance-logos .logo:nth-child(2n+2) {
        padding-left: 5px;
     }
-    .fundings-logos .logo .content{
+    .insurance-logos .logo .content{
         padding: 30px 0 20px;
         min-height: 200px;
     }

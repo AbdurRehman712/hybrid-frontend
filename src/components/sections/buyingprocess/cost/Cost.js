@@ -9,7 +9,7 @@ class Cost extends Component {
                 <Container>
                     <Row className="mb-5">
                         <Col md={12}>
-                            <h2 class="mb-3 title">Verð og flutningstími</h2>
+                            <h2 class="mb-4 title">Verð og flutningstími</h2>
                             <p>Enginn falinn kostnaður, tilboðið okkar stendur.</p>
                         </Col>
                     </Row>

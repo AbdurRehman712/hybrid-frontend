@@ -9,7 +9,7 @@ class Funding extends Component {
                 <Container>
                     <Row className="mb-5">
                         <Col md={12}>
-                            <h2 class="mb-3 title">Fjármögnunarleiðir</h2>
+                            <h2 class="mb-4 title">Fjármögnunarleiðir</h2>
                             <p>Allt að 100% fjármögnun í boði!</p>
                         </Col>
                     </Row>

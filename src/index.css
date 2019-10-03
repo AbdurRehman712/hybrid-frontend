@@ -77,3 +77,24 @@ button:focus {
 body .btn-primary.focus,body .btn-primary:focus{
   box-shadow: none !important;
 }
+h1.title + p, h1 + p {
+  font-size: 20px;
+  font-weight: normal;
+}
+h2.title, h1{
+  font-weight: 600;
+  font-size: 45px;
+}
+
+h2.title + p, h2 + p{
+  font-size: 20px;
+}
+
+.logo .content h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+.logo .content p {
+  font-size: 17px;
+  font-weight: 500;
+}

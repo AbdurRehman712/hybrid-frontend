@@ -1,17 +1,17 @@
 import React , { Component } from 'react';
 import { Switch, Route } from "react-router-dom";
-import Header from './compontents/sections/header/Header';
-import Footer from './compontents/sections/footer/Footer';
-import ContactPage from './compontents/pages/ContactPage';
-import LoginPage from './compontents/pages/LoginPage';
-import FindCarPage from './compontents/pages/FindCarPage';
-import BuyingProcess from './compontents/pages/BuyingProcess';
-import HomePage from './compontents/pages/HomePage';
-import ProductPage from './compontents/pages/ProductPage';
-import EnquiryPage from './compontents/pages/EnquiryPage';
-import ThanksPage from './compontents/pages/ThanksPage';
-import PaymentAssessment from './compontents/pages/PaymentAssessmentPage';
-import RequestsPage from './compontents/pages/RequestsPage';
+import Header from './components/sections/header/Header';
+import Footer from './components/sections/footer/Footer';
+import ContactPage from './components/pages/ContactPage';
+import LoginPage from './components/pages/LoginPage';
+import FindCarPage from './components/pages/FindCarPage';
+import BuyingProcess from './components/pages/BuyingProcess';
+import HomePage from './components/pages/HomePage';
+import ProductPage from './components/pages/ProductPage';
+import EnquiryPage from './components/pages/EnquiryPage';
+import ThanksPage from './components/pages/ThanksPage';
+import PaymentAssessment from './components/pages/PaymentAssessmentPage';
+import RequestsPage from './components/pages/RequestsPage';
 class App extends Component {
   render() {
   return (

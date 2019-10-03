@@ -7,7 +7,9 @@
     margin-bottom: 80px;
 }
 .work h2.tite{
+    font-size: 45px;
     font-weight: 600;
+    letter-spacing: 0.04px;
 }
 .main::before{
     content: "";
@@ -28,6 +30,10 @@
     border-radius: 8px;
     box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
     padding: 40px 40px;
+}
+.main .step h3 {
+    font-size: 20px;
+    font-weight: 600;
 }
 .steps.step2 {
     margin-bottom: 80px;

@@ -26,15 +26,35 @@
 }
 .cost .content .item h4 {
     margin-left: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    letter-spacing: 0.05px;
+}
+.cost .content .price h4{
+    font-size: 27px;
+    font-weight: 600;
+}
+.cost .total .price h4 {
+    font-size: 27px;
+    font-weight: 600;
 }
 .cost .total .item h4{
     padding-left: 25px;
+    font-size: 23px;
+    font-weight: 500;
 }
 .cost .table-responsive{
-    box-shadow: 0 0 20px 0
-rgba(91, 136, 233, 0.1);
+    box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);
     background: white;
     border-radius: 8px;
+}
+.cost h2.title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.cost h3 {
+    font-size: 25px;
+    font-weight: 600;
 }
 /* .cost table.table{
     border-collapse: separate;

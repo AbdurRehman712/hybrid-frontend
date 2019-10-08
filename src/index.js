@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from "react-router-dom";
+import ScrollToTop from '../src/components/utilitiesComponent/scrollToTop/ScrollToTop';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,7 +9,9 @@ import './index.css';
 
 ReactDOM.render(
     <Router>
-        <App />
+        <ScrollToTop>
+            <App />
+        </ScrollToTop>
     </Router>, 
     document.getElementById('root'));
 

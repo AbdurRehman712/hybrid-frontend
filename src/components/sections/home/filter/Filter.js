@@ -71,7 +71,7 @@ class Filter extends Component {
                                                 <Slider 
                                                     defaultValue={sliderValuePre}
                                                     onChange={this.handleValuePre}
-                                                    className="mb-4"
+                                                    className="mb-5"
                                                 />
                                                 <div className="cal-div mb-2 d-flex justify-content-between">
                                                     <span>

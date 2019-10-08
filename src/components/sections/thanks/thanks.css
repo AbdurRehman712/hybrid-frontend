@@ -9,16 +9,22 @@
 .thanks p {
     font-size: 20px;
     letter-spacing: 0.04px;
+    line-height: normal;
+    margin-bottom: 25px;
 }
 .thanks .bgprimary.border90.btn.btn-primary {
-    padding: 10px 90px !important;
+    padding: 12px 100px !important;
     margin-bottom: 15px;
     font-size: 18px;
+    line-height: normal;
+    letter-spacing: 0.04px;
 }
 .thanks .gohome {
     font-size: 15px;
     color: black;
     display: flex;
+    line-height: normal;
+    letter-spacing: 0.03px;
 }
 .thanks .gohome img {
     width: 50%;

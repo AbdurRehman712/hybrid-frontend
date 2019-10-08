@@ -53,6 +53,10 @@ p, span{
   font-weight: 400;
 }
 
+a.nav-link.active {
+  font-weight: bold;
+}
+
 .bg-blue{
   background: #5b89e9 !important;
   box-shadow: 0 0 20px 0 rgba(91, 136, 233, 0.1);

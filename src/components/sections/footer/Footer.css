@@ -99,6 +99,9 @@ footer .footer-bottom{
     footer .footer-bottom .social {
         align-items: flex-end !important;
     }
+    .footer-details.row .email {
+        text-align: left !important;
+    }
 }
 
 @media (min-width:601px) and (max-width:799px){

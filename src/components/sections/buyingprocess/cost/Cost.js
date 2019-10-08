@@ -51,9 +51,9 @@ class Cost extends Component {
                             </Table>
                         </Col>
                         <Col md={4} className="p-4 other-content">
-                            <h3 className="mb-4">Afgreiðslutími</h3>
+                            <h3 className="mb-4 pb-2">Afgreiðslutími</h3>
                             <h3>Evrópa</h3>
-                            <h3 className="mb-4">5-8 vikur</h3>
+                            <h3 className="mb-4 pb-2">5-8 vikur</h3>
                             <h3>Bandaríkin</h3>
                             <h3 className="mb-4">7-12 vikur</h3>
                         </Col>

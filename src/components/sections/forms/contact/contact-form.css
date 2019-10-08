@@ -49,6 +49,7 @@
 		2.5em 3.1em;
 		background-repeat: no-repeat;
 		outline: 0;
+		border: 0 !important;
 }
 .contact .form-group textarea.form-control{
 	padding: .6rem .75rem;

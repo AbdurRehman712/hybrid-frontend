@@ -4,5 +4,7 @@
 .gallery img {
     width: 100%;
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 0 rgba(64, 55, 144, 0.1);
+    border: solid 0.5px #d5d5d5;
 }

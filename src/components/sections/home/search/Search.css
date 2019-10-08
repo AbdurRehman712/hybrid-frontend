@@ -32,10 +32,10 @@
 	background-color: #5b89e9 !important;
 }
 .search .form-group select.form-control{
-	background-image: url("data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0EGREF3g+JAAAAe0lEQVQ4y2NgGInghAxpqpkYN5xIIlp5EuMGhnOiJy+eyiRO+cmrZyQZGIjUAlfOQJQWFOWEtWAox68Fq3LcWnAqx64Fr3JMLQSVo2rBrpwRm5bfexhn/PvJWMzsYvKcCA0MDEfFWPcwMPx2sX7FQCw4wXeCj2jFwx8AADAOVHSEvGqzAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA5LTI5VDA0OjI1OjE3KzAwOjAwdOc4yAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOS0yOVQwNDoyNToxNyswMDowMAW6gHQAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC");
+	background-image: url("data:img/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0EGREF3g+JAAAAe0lEQVQ4y2NgGInghAxpqpkYN5xIIlp5EuMGhnOiJy+eyiRO+cmrZyQZGIjUAlfOQJQWFOWEtWAox68Fq3LcWnAqx64Fr3JMLQSVo2rBrpwRm5bfexhn/PvJWMzsYvKcCA0MDEfFWPcwMPx2sX7FQCw4wXeCj2jFwx8AADAOVHSEvGqzAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA5LTI5VDA0OjI1OjE3KzAwOjAwdOc4yAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOS0yOVQwNDoyNToxNyswMDowMAW6gHQAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC");
     background-size: 15px;
 	background-position:
-		calc(100% - 20px) calc(0.6em + 2px),
+		calc(100% - 20px) calc(0.8em + 2px),
 		calc(100% - 15px) calc(1em + 2px),
 		100% 0;
 	background-repeat: no-repeat;
@@ -44,14 +44,15 @@
 }
 
 .search .form-group select.form-control:focus{
-	background-image: url("data:image/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0EGTBJtx/XAAAAfklEQVQ4y+3OMQ5AMBTG8a8OwEYkLsfkNDanMVg0eW3axeA2wiQ0LX1W8Y2vv39S4N8xk1EafklCRyrWSUgqmIHMkwH91onRlIzPyFzPqgUAqtUSTU7OSlweTXz+mIT5bXLPg8kz95I4dxIevyTaUsPhAECNtqCKywG81J/ZDmB/VKF8dkbGAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA5LTI5VDA0OjI1OjQ4KzAwOjAwyk9GRQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOS0yOVQwNDoyNTo0OCswMDowMLsS/vkAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC");
+	background-image: url("data:img/svg+xml;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAHdElNRQfjCR0EGTBJtx/XAAAAfklEQVQ4y+3OMQ5AMBTG8a8OwEYkLsfkNDanMVg0eW3axeA2wiQ0LX1W8Y2vv39S4N8xk1EafklCRyrWSUgqmIHMkwH91onRlIzPyFzPqgUAqtUSTU7OSlweTXz+mIT5bXLPg8kz95I4dxIevyTaUsPhAECNtqCKywG81J/ZDmB/VKF8dkbGAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA5LTI5VDA0OjI1OjQ4KzAwOjAwyk9GRQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wOS0yOVQwNDoyNTo0OCswMDowMLsS/vkAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC");
     background-size: 15px;
     background-position:
-        calc(100% - 20px) calc(0.6em + 2px),
+        calc(100% - 20px) calc(0.8em + 2px),
         calc(100% - 15px) calc(1em + 2px),
 		100% 0;
 	background-repeat: no-repeat;
 	outline: 0;
+	border: 0 !important;
 }
 .search .form-group textarea.form-control{
 	padding: .6rem .75rem;
@@ -140,7 +141,7 @@
 	background-image:  none;
 }
 .search .radio-options .custom-control-input:checked + .custom-control-label::after {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEwMCIgd2lkdGg9IjEwMCI+DQogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQwIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9InRyYW5zcGFyZW50IiAvPg0KPC9zdmc+IA==") !important;
+    background-image: url("data:img/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEwMCIgd2lkdGg9IjEwMCI+DQogIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjQwIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9InRyYW5zcGFyZW50IiAvPg0KPC9zdmc+IA==") !important;
     background-size: 85% !important;
     background-position: center center !important;
     background: radial-gradient(circle, black,white);
@@ -187,21 +188,24 @@ rgba(0, 0, 0, 0.04);
 	position: relative;
 	font-weight: bold;
 	font-size: 12px;
+	border: 0 !important;
 }
-.btn-result{
-    border-radius: 19px !important;
+.btn-result {
+    border-radius: 90px !important;
     box-shadow: 0 0 25px -2px rgba(44, 46, 89, 0.13) !important;
-    padding: 7px 25px 7px 50px !important;
+    padding: 12px 45px 12px 60px !important;
 }
-.btn-result span{
+.btn-result span {
     background: white;
     color: #5b89e9;
-    border-top-left-radius: 19px;
-    border-bottom-left-radius: 19px;
-    padding: 9px 12px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+    padding: 13px 16px;
     position: absolute;
     left: -2px;
     top: -1px;
+    font-size: 12px;
+    font-weight: bold;
 }
 .form-label {
     font-weight: 600;

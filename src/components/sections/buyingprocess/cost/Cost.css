@@ -87,7 +87,7 @@
         padding: 0px 0 20px;
     }
     .cost .table-responsive h3{
-        font-size: 1.2rem;
+        font-size: 18px;
     }
     .cost .table-responsive h4{
         font-size: 0.9rem;
@@ -112,5 +112,68 @@
     }
     .cost .total .item h4{
         padding-left: 8px;
+    }
+}
+
+@media (max-width:600px){
+    .cost .content .item li h4{
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 0.03px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .cost .content .item h4.txt-blue{
+        font-size: 16px;
+        letter-spacing: 0.88px;
+        font-weight: 600;
+        margin-left: 15px;
+    }
+    .cost .table-responsive h3{
+        font-size: 18px;
+        text-align: left;
+    }
+    .cost .content .item li::before{
+        font-size: 25px;
+        margin-left: -0.4em;
+        margin-top: -8px;
+    }
+    .cost .table .content td{
+        padding: 2.5rem 1.5rem 0.1rem !important;
+    }
+    .cost table thead tr th {
+        padding: 25px 33px !important;
+    }
+    .cost .total h4.item {
+        font-size: 16px !important;
+        font-weight: 600;
+        letter-spacing: 0.03px;
+        color: black;
+    }
+    .cost .total td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cost .total td {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.4rem 2rem 0;
+    }
+    .cost .total .price {
+        letter-spacing: 0.88px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #5b89e9;
+    }
+    .cost .other-content.col-md-4 {
+        padding: 3rem 1rem 0 !important;
+    }
+    .other-content.col-md-4 > div {
+        display: flex;
+        justify-content: space-between;
+    }
+    .other-content.col-md-4 > div div{
+        flex: 1;
     }
 }

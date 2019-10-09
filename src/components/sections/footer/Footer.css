@@ -1,5 +1,6 @@
 footer{
-    box-shadow: 0 2px 40px 0 rgba(56, 71, 96, 0.09)
+    box-shadow: 0 2px 40px 0 rgba(56, 71, 96, 0.09);
+    background-color: #ffffff;
 }
 
 footer .footer-content{

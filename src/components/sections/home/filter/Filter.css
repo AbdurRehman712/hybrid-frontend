@@ -1,5 +1,6 @@
 .filter{
     background: white;
+    z-index: 1;
 }
 
 .filter input.form-control,.filter select.form-control{
@@ -86,12 +87,15 @@ div#popover-positioned-bottom .arrow {
 div#popover-positioned-bottom .rc-slider-track, div#popover-positioned-bottom .rc-slider-step, div#popover-positioned-bottom  .rc-slider-rail{
     height: 5px !important;
 }
-#popover-positioned-bottom .bs-popover-bottom>.arrow::before {
+#popover-positioned-bottom .bs-popover-bottom > .arrow::before {
     top: 0;
     border-width: 0 .5rem .5rem .5rem;
     border-bottom-color: rgba(255, 255, 255, 0.25) !important;
 }
-html body div#popover-positioned-bottom arrow:before {
+#popover-positioned-bottom .bs-popover-auto[x-placement^="bottom"] > .arrow::before, #popover-positioned-bottom .bs-popover-bottom > .arrow::before{
+    border-bottom-color: rgba(255, 255, 255, 0.25) !important;
+}
+html body div#popover-positioned-bottom .arrow:before {
     border-bottom-color: rgba(255, 255, 255, 0.25) !important;
 }
 .filter-item.custom.last.bg-blue.txt-white {

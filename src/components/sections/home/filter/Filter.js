@@ -23,7 +23,7 @@ class Filter extends Component {
     render() {
         const { sliderValuePre, sliderValueMonth } = this.state;
         return (
-            <section className="filter">
+            <section className="filter" style={this.props.style}>
                 <Container>
                     <Row>
                         <Col md={12} className="d-flex justify-content-between flex-wrap align-items-center">

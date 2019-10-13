@@ -1,6 +1,8 @@
 .bgprimary{
     background-color: #5b89e9 !important;
     color: white !important;
+    box-shadow: 0 0 30px 0 rgba(114, 157, 218, 0.5);
+    border: 0 !important;
 }
 
 .bgprimary-outline {

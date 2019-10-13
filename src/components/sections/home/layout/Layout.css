@@ -53,6 +53,9 @@
 .search-box form input {
     padding-left: 40px;
 }
+.more-product .btn-primary {
+    padding: 8px 90px;
+}
 
 @media (max-width: 800px){
     .layout{

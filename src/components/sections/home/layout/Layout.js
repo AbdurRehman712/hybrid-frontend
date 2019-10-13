@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Form} from 'react-bootstrap';
-import Product from '../../product/Product'
+import Product from '../../product/Product';
+import Button from '../../../utilitiesComponent/button/CustomButton';
 import './Layout.css';
 
 class Layout extends Component {
@@ -43,6 +44,9 @@ class Layout extends Component {
                 </Container>
                 <section className="product-container">
                     <Product listLayout={ this.state.listLayout } />
+                    <div className="text-center more-product">
+                        <Button className="bgprimary border90" title="Meira" />
+                    </div>
                 </section>
             </section>
         )

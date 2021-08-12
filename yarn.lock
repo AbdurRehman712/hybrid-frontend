@@ -8647,6 +8647,11 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
+trim-right@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-2.0.0.tgz#19f987a2fca0c81b46ab72a54e0e4d41e099d689"
+  integrity sha512-9oGt49eXLpDY8XbEjVvEH0uSf8hAL08jt+bMy+3v3ad/d/5bDlKa0rfSaT5GI4dLIUtklsLGtoUfFNYqpqX7rQ==
+
 ts-pnp@1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.1.2.tgz#be8e4bfce5d00f0f58e0666a82260c34a57af552"

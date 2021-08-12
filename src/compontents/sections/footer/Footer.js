@@ -8,7 +8,7 @@ class Footer extends Component {
                 <Container>
                     <Row className="align-items-center footer-content">
                         <Col md={6} className="footer-logo d-flex align-items-center ">
-                            <a  href=""><img src="/assets/images/hybrid-logo.png" alt="Hybrid Logo" /> <span> hybrid.is </span> </a>
+                            <a  href="#a"><img src="/assets/images/hybrid-logo.png" alt="Hybrid Logo" /> <span> hybrid.is </span> </a>
                         </Col>
                         <Col>
                             <Row className="footer-details">
@@ -36,8 +36,8 @@ class Footer extends Component {
                                 </Row>
                             </Col>
                             <Col md={6} className="social d-flex align-items-center justify-content-end">
-                                <a href="#"><img src="/assets/images/facebook.png" alt="Hybrid Facebook" /> </a>
-                                <a href="#"><img src="/assets/images/instagram.png" alt="Hybrid Facebook" /> </a>
+                                <a href="#a"><img src="/assets/images/facebook.png" alt="Hybrid Facebook" /> </a>
+                                <a href="#a"><img src="/assets/images/instagram.png" alt="Hybrid Facebook" /> </a>
                             </Col>
                         </Row>
                     </Container>

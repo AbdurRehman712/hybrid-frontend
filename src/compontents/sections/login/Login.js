@@ -9,7 +9,7 @@ export class Login extends Component {
                     <Row>
                         <Col md={6}>
                             <h1>Innskráning</h1>
-                            <p>Ekki með aðgang? <a href="#">Smelltu hér</a></p>
+                            <p>Ekki með aðgang? <a href="#a">Smelltu hér</a></p>
                             <Form>
                                 <Form.Group controlId="formBasicEmail" className="user-input-wrp">
                                     <Form.Control type="email" className="inputText" />

@@ -18,7 +18,7 @@
     "react-slick": "^0.25.2",
     "react-sticky": "^6.0.3",
     "rxjs": "^6.5.3",
-    "trim-right": "2.0.0",
+    "trim-right": "2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

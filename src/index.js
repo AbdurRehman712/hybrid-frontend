@@ -6,7 +6,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import trimRight from './trim-right/index.js';
+import { trimRight } from 'trim-right';
 
 trimRight('  unicorn  ');
 

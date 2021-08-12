@@ -6,7 +6,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import trimEnd from 'trim-right-x';
+import trimRight from 'trim-right';
+
+trimRight('  unicorn  ');
 
 ReactDOM.render(
     <Router>

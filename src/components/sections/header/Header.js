@@ -30,8 +30,8 @@ class Header extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                            <Nav.Link onClick={this.closeNav} activeClassName="active" href="">Bílar á skrá</Nav.Link>
-                            <Nav.Link onClick={this.closeNav} activeClassName="active" href="">Bílaleit</Nav.Link>
+                            <Nav.Link onClick={this.closeNav} activeClassName="active" href="/">Bílar á skrá</Nav.Link>
+                            <Nav.Link onClick={this.closeNav} activeClassName="active" href="/">Bílaleit</Nav.Link>
                             <Nav.Link onClick={this.closeNav} activeClassName="active" as={NavLink} to="/buying-process">Kaupferlið</Nav.Link>
                             <Nav.Link onClick={this.closeNav} activeClassName="active" as={NavLink} to="/contact">Hafa samband</Nav.Link>
                         </Nav>
